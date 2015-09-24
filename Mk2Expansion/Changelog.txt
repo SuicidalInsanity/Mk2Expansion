@@ -1,3 +1,24 @@
+Version 1.6
+============================
+-New Mesh: CB-C cockpit now has three different flavors via IFS mesh switch
+-New IVA: Cb-C cockpit now with custom IVA
+-New IVA: Mk2 Scilab now has custom IVA
+-Model Rework: R-71 cockpit mesh error fixed
+-Model Rework: 'Vector" Turbojet new model
+-Model Rework; 'Afterburn' Ramjet new model
+-New FX for the Afterburn and Vector
+-FX fix; Pluto now with 100% more smoke trail
+-Part respec: 'J. Edgar engines returned from legacy, are now heavy lift VTOL engines
+-Part respec: 'Pegaus', 'Siddeley', 'Jumpjet' engines thrust buffed ~20%, should make fighter VTOls a bit easier to build
+-New part: Short mk2 bicoupler
+-New Part; mk2 Shockcone Intake
+-New part: short mk2-size2 adapter
+-New part: Radial landing leg w/ aeroshell
+-New part: mk2 conformal solar panel
+-Added CLS compatibility MM patch
+-Added ASET IVA MM patch
+-NFE compatibility and NTJ_decay patched tweaked, should no longer conflict with the Mk2 KSPI integration mod
+
 
 Version !.5.1
 ======================

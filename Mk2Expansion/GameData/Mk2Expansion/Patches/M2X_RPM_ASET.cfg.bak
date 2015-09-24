@@ -1,0 +1,50 @@
+@PART[*]:HAS[@INTERNAL[DropshipCockpit]]:NEEDS[JSI]:NEEDS[ASET]{
+	MODULE 
+	{
+		name = RasterPropMonitorComputer
+	}
+	
+	@INTERNAL {
+		@name = DropshipCockpitASET
+	}
+}
+@PART[*]:HAS[@INTERNAL[BladeCockpitRPM]]:NEEDS[JSI]:NEEDS[ASET]{
+	MODULE 
+	{
+		name = RasterPropMonitorComputer
+	}
+	
+	@INTERNAL {
+		@name = BladeCockpitASET
+	}
+}
+@PART[*]:HAS[@INTERNAL[RavenCockpitRPM]]:NEEDS[JSI]:NEEDS[ASET]{
+	MODULE 
+	{
+		name = RasterPropMonitorComputer
+	}
+	
+	@INTERNAL {
+		@name = RavenCockpitASET
+	}
+}
+@PART[*]:HAS[@INTERNAL[TunaCockpit]]:NEEDS[JSI]:NEEDS[ASET]{
+	MODULE 
+	{
+		name = RasterPropMonitorComputer
+	}
+	
+	@INTERNAL {
+		@name = TunaCockpitASET
+	}
+}
+@PART[*]:HAS[@INTERNAL[ViperCockpitRPM]]:NEEDS[JSI]:NEEDS[ASET]{
+	MODULE 
+	{
+		name = RasterPropMonitorComputer
+	}
+	
+	@INTERNAL {
+		@name = ViperCockpitASET
+	}
+}
