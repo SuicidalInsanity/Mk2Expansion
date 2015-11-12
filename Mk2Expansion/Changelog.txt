@@ -1,3 +1,22 @@
+Version 1.6.10
+==============================
+-KSP 1.05 update
+-Fixed missing textures from Squad part depreciation
+-New Part: F4-C Turboprop Engine
+-New Part: Mk2 Airlock Endplate
+-New Part: R-4 'Mongrel' Rocket VTOL engine
+-New part: Mk2 Precooler
+-Jet engines now have thrustdamagemultipliers
+-G-120 "Vector" Turbojet Engine now has an afterburner
+-SC-TD Multipurpose cockpit IVA tweaks
+-Mk2 Sci-lab IVA tweaks
+-Fixed Shrouded solar panel symmetry
+-Chines now have stack attach nodes
+-Firespitter added as a dependancy
+-Reduced NUK-3 Aircraft Fission reactor weight
+-Reduced 'Spirit' Ion Engine Ec requirement
+-Reduced 'Spirit' Ion Engine ISP by 20%
+
 Version 1.6.05
 ==============================
 -Fixed HS-X cockpit colliders, FAR voxelization should now work properly
@@ -13,7 +32,7 @@ Version 1.6
 -Model Rework; 'Afterburn' Ramjet new model
 -New FX for the Afterburn and Vector
 -FX fix; Pluto now with 100% more smoke trail
--Part respec: 'J. Edgar engines returned from legacy, are now heavy lift VTOL engines
+-Part respec: 'J. Edgar eKSPngines returned from legacy, are now heavy lift VTOL engines
 -Part respec: 'Pegaus', 'Siddeley', 'Jumpjet' engines thrust buffed ~20%, should make fighter VTOls a bit easier to build
 -New part: Short mk2 bicoupler
 -New Part; mk2 Shockcone Intake
