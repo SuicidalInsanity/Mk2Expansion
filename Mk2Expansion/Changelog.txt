@@ -1,3 +1,32 @@
+Version 1.7
+==============================
+-New part: Mk2 Inline ISRU drill
+-New Part: Mk2 ISRU refinery
+-New part: Mk2 ore tank
+-New Part: Mk2 FuelCell
+-New part: 'Hyperblast" Mk2 Scramjet
+-New part: 'Boost-O-Tron' Air-Augmented radial SRB
+-New Part: 'Mallet' Air-Augmented radial SRB
+-New part: 'Sledgehammer' Air-Augmented Rocket Engine
+-New part: 'Banshee' Mk2 Lift fan
+-New Part: Linear tricoupler
+-New Part: Mk2 Radial Attack mount A
+-New Part: Mk2 Radial Attach Mount B
+-Air Intake intake volumes and masses rebalanced to be more inline with squad values
+-Model rework; 'Rontgen' no longer has integrated air intakes, now uses standard intakes
+-Fixed 'Wirligig' reverse thrust
+-Model rework: Service Bay collider issue fixed, added IFS configurable tanks
+-Model rework: Spadetail now has IFS alternate models
+-Model Rework: CBC Cockpit Viper Variant mesh slightly tweaked, retextured
+-Model Rework: Chine symmetry fixed, will now properly place when attaching chines to other chines in Mirror symmetry mode
+-Fixed CB-C intake NoAttach colliders
+-Engine colliders reworked; parts can now be placed on engine housings
+-reworked applicable parts' ModuleTestSubject 
+-Model rework: Cockpits now have togglable window emissives
+-Model Rework; Mk2 hubs now have configurable fuel tanks
+-Model retextures: changed model textures on some models to remove depeciated SQUAD texture references 
+-J. Edgar fuselage VTOL engine now uses the BDAnimation module rather than AnimateGeneric
+
 Version 1.6.10
 ==============================
 -KSP 1.05 update
