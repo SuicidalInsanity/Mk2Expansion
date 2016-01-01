@@ -2,6 +2,8 @@ OVERVIEW
 ===================================================================================================================
 This pack provides mew mk2 spaceplane parts in the form of engines, fuselage segments and aerodynamic accessories.
 
+THIS IS A DEVELOPMENT PRE-RELEASE
+
 INSTALLATION
 ===================================================================================================================
 Delete the previous version of Mk2 Expansion (if any) and place the GameData/Mk2Expansion, Gamedata/Klockheed_martain_Gimbal, Gamedata/CommunityResourcepack, and GameData/InterstellarFuelSwitch directories into Kerbal Space Program/GameData directory.

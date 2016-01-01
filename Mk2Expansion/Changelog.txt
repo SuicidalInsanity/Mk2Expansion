@@ -1,4 +1,16 @@
-Version 1.7
+Version 1.7.01 prerelease
+================================
+new part: mk2 inline drill, for real this time
+New part: mk2 ISRu refinery, ditto
+AASRBs now have increased intakeAtm storage and intakes now have mach curves buffing their intake ability at low speed
+tweaked AASRB intakeAtm consumption, should be a bit easier to use
+tweaked AASRB thrust down slightly to improve burn time
+tweaked Sledgehammer AARE, shouldfunction properly now switching engine modes
+Air Augmented engines now have max thrust/ISP listed in their part descriptions
+Tweaked Banshee, now uses FanIntakeAir to prevent Banshee from acting as a 2m intake for any other jets on the craft
+Vector turbojet alternator now functions during afterburner operation
+
+Version 1.7 prerelease
 ==============================
 -New part: Mk2 Inline ISRU drill
 -New Part: Mk2 ISRU refinery
@@ -26,6 +38,11 @@ Version 1.7
 -Model Rework; Mk2 hubs now have configurable fuel tanks
 -Model retextures: changed model textures on some models to remove depeciated SQUAD texture references 
 -J. Edgar fuselage VTOL engine now uses the BDAnimation module rather than AnimateGeneric
+
+=rework model for ISRU refinery
+=add custom FX for all airaugmented engines
+==auto detach when empty for AASRBs?
+=shrouded deployable radiator
 
 Version 1.6.10
 ==============================
