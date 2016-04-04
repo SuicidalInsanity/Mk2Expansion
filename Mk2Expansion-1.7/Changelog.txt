@@ -14,7 +14,8 @@ Version 1.7.03
 -Model Rework: Shrouded solar panel completely reworked
 -New Part: OMS Blister - more powerful LF/O version of the Configurable RCS blister
 -New Part: Mk2 subsonic intake
-_New Part: Banshee Lift Fan radial variant
+-New Part: Banshee Lift Fan radial variant
+-New Part: low-profile Aligned docking port
 -Model retexture: mk2 Precooler
 -New FX; AARE and AASRBs now have custom FX
 -Fixed Air-Augmented engines mode switch dual activation issue
