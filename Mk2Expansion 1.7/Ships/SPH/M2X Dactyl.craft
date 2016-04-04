@@ -1,0 +1,5997 @@
+ship = M2X Dactyl
+version = 1.1.0
+description = A maneuverable single engine fighter with an unusual fuselage shape. The vectored engine contributes to maneuvearbility, and while its afterburner mode guzzles fuel, the plane has fuel to spare
+type = SPH
+size = 9.956234,4.851868,11.84234
+upgraded = 1.1 Wheel Module Overhaul // Upgrades obsolete ModuleWheel, ModuleLandingGear, ModuleLandingLeg data into the new ModuleWheelBase and WheelSubmodules scheme.
+upgraded = 1.1 SmallGearBay Offset // Applies a small upwards offset to smallGearBay parts
+PART
+{
+	part = M2X.InverterFuselage_4294070242
+	partName = Part
+	pos = 0.006802319,7.028337,-0.05058205
+	attPos = 0,0,0
+	attPos0 = 0.006802319,7.028337,-0.05058205
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,0.9999999
+	attRot0 = 0.7071068,0,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0.57
+	modSize = (0.0, 0.0, 0.0)
+	link = M2X.Turbojet_4293955636
+	link = deltaWing_4293938682
+	link = deltaWing_4293938612
+	link = mk2.1m.Bicoupler_4293910720
+	link = delta.small_4293858442
+	link = SmallGearBay_4293531974
+	link = SmallGearBay_4293531742
+	link = wingStrake_4293340946
+	link = wingStrake_4293340862
+	attN = top,mk2.1m.Bicoupler_4293910720
+	attN = bottom,M2X.Turbojet_4293955636
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = InterstellarFuelSwitch
+		isEnabled = True
+		configuredAmounts = 800,
+		traceBoiloff = False
+		selectedTankSetup = 2
+		selectedTankSetupTxt = 
+		gameLoaded = False
+		configLoaded = True
+		stagingEnabled = True
+		EVENTS
+		{
+			nextTankSetupEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Next tank setup
+				guiName = Next tank setup
+				category = Next tank setup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousTankSetupEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Previous tank setup
+				guiName = Previous tank setup
+				category = Previous tank setup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 800
+		maxAmount = 800
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = M2X.Turbojet_4293955636
+	partName = Part
+	pos = 0.006802319,7.028337,-2.862794
+	attPos = 0,0,0
+	attPos0 = 0,-2.812211,-1.676208E-07
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = top,M2X.InverterFuselage_4294070242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = MultiModeEngine
+		isEnabled = True
+		runningPrimary = True
+		autoSwitch = False
+		stagingEnabled = True
+		EVENTS
+		{
+			DisableAutoSwitch
+			{
+				active = False
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Automatic Switching
+				guiName = Automatic Switching
+				category = Automatic Switching
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableAutoSwitch
+			{
+				active = False
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Manual Switching
+				guiName = Manual Switching
+				category = Manual Switching
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ModeEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Toggle Mode
+				guiName = Toggle Mode
+				category = Toggle Mode
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ModeAction
+			{
+				actionGroup = Custom01
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			OnAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = False
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = True
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = KM_Gimbal_3
+		isEnabled = True
+		gimbalTransformName = Obj_Gimbal
+		yawGimbalRange = 0
+		pitchGimbalRange = 20
+		debug = True
+		trimX = 0
+		trimY = 0
+		enableTrim = True
+		enableGimbal = True
+		enableSmoothGimbal = True
+		responseSpeed = 60
+		enableRoll = False
+		autoSetRoll = True
+		hideSpeedEditing = False
+		hideRollEditing = False
+		stagingEnabled = True
+		trimX_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		trimY_UIFlight
+		{
+			controlEnabled = True
+			minValue = -14
+			maxValue = 14
+			stepIncrement = 1
+		}
+		enableTrim_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableSmoothGimbal_UIFlight
+		{
+			controlEnabled = True
+		}
+		responseSpeed_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			dbg_run
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Toggle Debug
+				guiName = Toggle Debug
+				category = Toggle Debug
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			toggleRoll
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Toggle Roll
+				guiName = Activate Roll
+				category = Toggle Roll
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleGimbal
+			{
+				actionGroup = None
+			}
+			plusTrimX
+			{
+				actionGroup = None
+			}
+			minusTrim
+			{
+				actionGroup = None
+			}
+			plus5Trim
+			{
+				actionGroup = None
+			}
+			minus5Trim
+			{
+				actionGroup = None
+			}
+			plusTrimY
+			{
+				actionGroup = None
+			}
+			minusTrimY
+			{
+				actionGroup = None
+			}
+			plus5TrimY
+			{
+				actionGroup = None
+			}
+			minus5TrimY
+			{
+				actionGroup = None
+			}
+			toggleTrim
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 0
+		maxAmount = 0.1
+		flowState = True
+		isTweakable = False
+		hideFlow = True
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = deltaWing_4293938682
+	partName = Part
+	pos = -1.06721,7.028337,-0.8115827
+	attPos = 0,0,0
+	attPos0 = -1.074013,-0.7609999,-4.535913E-08
+	rot = 0.7045727,0.05980999,-0.05980999,0.7045727
+	attRot = 0,0,0,1
+	attRot0 = 0,0,-0.08458409,0.9964164
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.167557
+	modSize = (0.0, 0.0, 0.0)
+	link = structuralWing4_4293933288
+	sym = deltaWing_4293938612
+	srfN = srfAttach,M2X.InverterFuselage_4294070242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = deltaWing_4293938612
+	partName = Part
+	pos = 1.080816,7.028337,-0.8115827
+	attPos = 0,0,0
+	attPos0 = 1.074013,-0.7609999,-4.535913E-08
+	rot = -0.05981003,0.7045726,0.7045729,0.05980996
+	attRot = 0,0,0,1
+	attRot0 = -0.08458409,0.9964163,1.264405E-07,-4.74152E-08
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.167557
+	modSize = (0.0, 0.0, 0.0)
+	link = structuralWing4_4293933168
+	sym = deltaWing_4293938682
+	srfN = srfAttach,M2X.InverterFuselage_4294070242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralWing4_4293933288
+	partName = Part
+	pos = -1.654046,7.028337,-1.773719
+	attPos = 0,0,0
+	attPos0 = -0.4162587,-1.047288,-5.734785E-08
+	rot = -0.5405008,0.4559155,-0.4559169,-0.5404996
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = -9.241231E-07,-1.07246E-06,-0.7071068,-0.7071068
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.03511417
+	modSize = (0.0, 0.0, 0.0)
+	link = delta.small_4293929286
+	sym = structuralWing4_4293933168
+	srfN = srfAttach,deltaWing_4293938682
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = structuralWing4_4293933168
+	partName = Part
+	pos = 1.667651,7.028337,-1.773719
+	attPos = 0,0,0
+	attPos0 = -0.4162586,-1.047288,-2.453717E-07
+	rot = 0.4559168,0.5404994,0.5405011,-0.4559155
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = -9.509496E-07,-1.092368E-06,0.7071068,0.7071068
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.03511417
+	modSize = (0.0, 0.0, 0.0)
+	link = delta.small_4293929194
+	sym = structuralWing4_4293933288
+	srfN = srfAttach,deltaWing_4293938612
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = delta.small_4293929286
+	partName = Part
+	pos = -2.277827,7.028335,-2.00403
+	attPos = 0,0,0
+	attPos0 = -0.3321596,0.5760344,1.974522E-07
+	rot = 0.6307889,0.3195396,0.3195376,-0.6307898
+	attRot = 0.9999999,0,0,0
+	attRot0 = -0.9732491,0.2297527,2.451774E-07,4.366608E-08
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.03181499
+	modSize = (0.0, 0.0, 0.0)
+	link = smallCtrlSrf_4293923800
+	link = elevon2_4293923088
+	sym = delta.small_4293929194
+	srfN = srfAttach,structuralWing4_4293933288
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = delta.small_4293929194
+	partName = Part
+	pos = 2.291433,7.028335,-2.00403
+	attPos = 0,0,0
+	attPos0 = -0.3321597,0.5760342,-2.910997E-07
+	rot = -0.3195376,0.6307896,-0.630789,-0.3195395
+	attRot = 0.9999999,0,0,0
+	attRot0 = 0.973249,-0.2297527,4.799381E-07,-7.585574E-09
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.03181499
+	modSize = (0.0, 0.0, 0.0)
+	link = smallCtrlSrf_4293923734
+	link = elevon2_4293923030
+	sym = delta.small_4293929286
+	srfN = srfAttach,structuralWing4_4293933168
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = smallCtrlSrf_4293923800
+	partName = Part
+	pos = -1.537244,7.028337,-2.784588
+	attPos = 0,0,0
+	attPos0 = -0.1912088,1.058856,-2.192222E-07
+	rot = -0.05382371,0.7050554,0.7050554,0.05382156
+	attRot = 0,0,-0.7071068,0.7071068
+	attRot0 = -3.825216E-09,-5.09936E-08,-0.9238797,0.3826833
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = -0.02231104
+	modSize = (0.0, 0.0, 0.0)
+	sym = smallCtrlSrf_4293923734
+	srfN = srfAttach,delta.small_4293929286
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 0
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 20
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		pitchaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		yawaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		rollaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIFlight
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		brakeRudder_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		maxdeflect_UIFlight
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
+		}
+		isFlap_UIFlight
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIFlight
+		{
+			controlEnabled = True
+		}
+		maxdeflectFlap_UIFlight
+		{
+			controlEnabled = True
+			minValue = -85
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = smallCtrlSrf_4293923734
+	partName = Part
+	pos = 1.55085,7.028337,-2.784587
+	attPos = 0,0,0
+	attPos0 = -0.1912089,1.058855,8.434483E-08
+	rot = -0.7050554,-0.05382168,0.05382377,-0.7050554
+	attRot = 0,0,-0.7071068,0.7071068
+	attRot0 = 1.299224E-07,-4.679536E-08,-0.9238796,0.3826833
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = -0.02231104
+	modSize = (0.0, 0.0, 0.0)
+	sym = smallCtrlSrf_4293923800
+	srfN = srfAttach,delta.small_4293929194
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 0
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 20
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		pitchaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		yawaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		rollaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIFlight
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		brakeRudder_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		maxdeflect_UIFlight
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
+		}
+		isFlap_UIFlight
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIFlight
+		{
+			controlEnabled = True
+		}
+		maxdeflectFlap_UIFlight
+		{
+			controlEnabled = True
+			minValue = -85
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = elevon2_4293923088
+	partName = Part
+	pos = -2.880416,7.028333,-2.991062
+	attPos = 0,0,0
+	attPos0 = -1.152273,0.0980745,1.599734E-07
+	rot = -0.7050554,0.05382156,-0.05382371,-0.7050554
+	attRot = 0.7071067,0.7071067,0,0
+	attRot0 = 0.9238797,0.3826833,-3.825212E-09,5.09936E-08
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = -0.029194
+	modSize = (0.0, 0.0, 0.0)
+	sym = elevon2_4293923030
+	srfN = srfAttach,delta.small_4293929286
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 55
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 14.5
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		pitchaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		yawaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		rollaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIFlight
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		brakeRudder_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		maxdeflect_UIFlight
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
+		}
+		isFlap_UIFlight
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIFlight
+		{
+			controlEnabled = True
+		}
+		maxdeflectFlap_UIFlight
+		{
+			controlEnabled = True
+			minValue = -85
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = elevon2_4293923030
+	partName = Part
+	pos = 2.894022,7.028333,-2.991062
+	attPos = 0,0,0
+	attPos0 = -1.152272,0.09807429,-3.868733E-07
+	rot = 0.05382385,0.7050555,0.7050555,-0.05382178
+	attRot = 0.7071067,0.7071067,0,0
+	attRot0 = -0.9238797,-0.3826833,-1.035798E-07,3.435246E-08
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = -0.029194
+	modSize = (0.0, 0.0, 0.0)
+	sym = elevon2_4293923088
+	srfN = srfAttach,delta.small_4293929194
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 55
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 14.5
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		pitchaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		yawaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		rollaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIFlight
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		brakeRudder_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		maxdeflect_UIFlight
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
+		}
+		isFlap_UIFlight
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIFlight
+		{
+			controlEnabled = True
+		}
+		maxdeflectFlap_UIFlight
+		{
+			controlEnabled = True
+			minValue = -85
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = mk2.1m.Bicoupler_4293910720
+	partName = Part
+	pos = 0.006802319,7.028337,2.880153
+	attPos = 0,0,0
+	attPos0 = 0,2.930734,1.746854E-07
+	rot = 0.5,-0.5,0.5,-0.5
+	attRot = 0.7071067,0,0.7071067,0
+	attRot0 = 0.7071068,0,0.7071068,0
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = CircularIntake_4294038540
+	link = pointyNoseConeA_4293897512
+	link = SmallGearBay_4293824654
+	attN = top,M2X.InverterFuselage_4294070242
+	attN = bottom01,CircularIntake_4294038540
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 180
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 0
+		maxAmount = 220
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = CircularIntake_4294038540
+	partName = Part
+	pos = 0.006801419,6.403337,3.817655
+	attPos = 0,0,0
+	attPos0 = 0.6250001,-0.9375,-1.490116E-07
+	rot = -0.7071068,0,0,-0.7071068
+	attRot = 0,0,0,-0.9999999
+	attRot0 = 0.7071068,0,0.7071068,0
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom01,mk2.1m.Bicoupler_4293910720
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		isVisible = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = IntakeAtm
+		amount = 2
+		maxAmount = 2
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = pointyNoseConeA_4293897512
+	partName = Part
+	pos = 0.006803614,7.642178,1.966667
+	attPos = 0.954567,1.19951,2.605985E-07
+	attPos0 = -1.568406,-0.2860249,3.043152E-07
+	rot = -0.7071068,5.960466E-08,-5.960464E-08,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 5.960464E-08,0.7071068,5.960464E-08,-0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Mark2Cockpit_4293889778
+	srfN = srfAttach,mk2.1m.Bicoupler_4293910720
+	attN = bottom01,Mark2Cockpit_4293889778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Mark2Cockpit_4293889778
+	partName = Part
+	pos = 0.006803994,7.642179,3.529171
+	attPos = 0,0.7457926,1.490116E-07
+	attPos0 = 3.743918E-07,-1.5625,-3.826272E-07
+	rot = 0.7071068,8.881809E-16,-8.881809E-16,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 1,-5.024296E-15,8.42937E-08,-8.42937E-08
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = noseConeAdapter_4293875592
+	link = CanardController_4293916058
+	link = CanardController_4293868350
+	attN = top,noseConeAdapter_4293875592
+	attN = bottom,pointyNoseConeA_4293897512
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		stagingEnabled = True
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		stagingEnabled = True
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeployExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CleanUpExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Restore
+				guiName = Restore
+				category = Restore
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			StoreDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = 
+				guiName = Store Experiments (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.3
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = 
+				guiName = Take Data (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.3
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Review Data
+				guiName = Review Stored Data (0)
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Toggle Flag
+				guiName = Toggle Flag
+				category = Toggle Flag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 0.25
+		deployPercent = 100
+		stagingEnabled = True
+		deployPercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Toggle
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Toggle
+				guiName = Lights On
+				category = Toggle
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = JSINonTransparentPod
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+	}
+	MODULE
+	{
+		name = TransferDialogSpawner
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			SpawnDialog
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = True
+				guiIcon = Transfer Crew
+				guiName = Transfer Crew
+				category = Transfer Crew
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 50
+		maxAmount = 50
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 7.5
+		maxAmount = 7.5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = noseConeAdapter_4293875592
+	partName = Part
+	pos = 0.006804365,7.642179,5.216674
+	attPos = 0,0,0
+	attPos0 = 3.743918E-07,1.687501,1.192094E-07
+	rot = 0.7071068,-1.776355E-15,1.776355E-15,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,0,-2.512148E-15,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = avionicsNoseCone_4293872748
+	attN = top,avionicsNoseCone_4293872748
+	attN = bottom01,Mark2Cockpit_4293889778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 80
+		flowState = False
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = avionicsNoseCone_4293872748
+	partName = Part
+	pos = 0.006804745,7.642179,6.59168
+	attPos = 0,0,0
+	attPos0 = 3.743918E-07,1.375,1.192093E-07
+	rot = 0.7071068,-1.776357E-15,1.776357E-15,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,noseConeAdapter_4293875592
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		stagingEnabled = True
+		standaloneToggle_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = CanardController_4293916058
+	partName = Part
+	pos = -0.6058192,7.642178,3.062363
+	attPos = 0,0,0
+	attPos0 = -0.6126224,-0.4668069,-6.676528E-08
+	rot = 0.7071068,4.214685E-08,-4.214685E-08,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 8.42937E-08,-2.117582E-22,-5.960464E-08,1
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = -0.01193806
+	modSize = (0.0, 0.0, 0.0)
+	sym = CanardController_4293868350
+	srfN = srfAttach,Mark2Cockpit_4293889778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 45
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 13.5
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		pitchaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		yawaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		rollaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIFlight
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		brakeRudder_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		maxdeflect_UIFlight
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
+		}
+		isFlap_UIFlight
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIFlight
+		{
+			controlEnabled = True
+		}
+		maxdeflectFlap_UIFlight
+		{
+			controlEnabled = True
+			minValue = -85
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = CanardController_4293868350
+	partName = Part
+	pos = 0.6194272,7.642179,3.062363
+	attPos = 0,0,0
+	attPos0 = 0.6126227,-0.4668069,-5.244398E-08
+	rot = -1.017515E-07,0.7071068,0.7071069,-1.74578E-08
+	attRot = 0,0,0,1
+	attRot0 = -5.960467E-08,1,1.685874E-07,-4.371139E-08
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = -0.01193806
+	modSize = (0.0, 0.0, 0.0)
+	sym = CanardController_4293916058
+	srfN = srfAttach,Mark2Cockpit_4293889778
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 100
+		yawaxis = 0
+		rollaxis = 45
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 13.5
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		pitchaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		yawaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		rollaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIFlight
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		brakeRudder_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		maxdeflect_UIFlight
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
+		}
+		isFlap_UIFlight
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIFlight
+		{
+			controlEnabled = True
+		}
+		maxdeflectFlap_UIFlight
+		{
+			controlEnabled = True
+			minValue = -85
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = delta.small_4293858442
+	partName = Part
+	pos = 0.006802248,7.740122,-1.316628
+	attPos = 0,0,0
+	attPos0 = -6.146729E-08,-1.266045,-0.7117854
+	rot = -0.5081015,0.4917651,0.5081015,-0.4917651
+	attRot = 0,0,0,1
+	attRot0 = -0.01155161,0.7070124,0.01155161,-0.7070124
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.06949899
+	modSize = (0.0, 0.0, 0.0)
+	link = elevon3_4293861876
+	srfN = srfAttach,M2X.InverterFuselage_4294070242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = elevon3_4293861876
+	partName = Part
+	pos = 0.006802135,8.668223,-1.911627
+	attPos = 0,0,0
+	attPos0 = -0.9081665,-0.6249995,-3.1844E-08
+	rot = 0.5080991,-0.4917676,-0.508104,0.4917626
+	attRot = -0.7071067,-0.7071067,0,0
+	attRot0 = -8.179299E-08,5.006122E-06,8.890817E-08,-1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = -0.037952
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,delta.small_4293858442
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARControllableSurface
+		isEnabled = True
+		pitchaxis = 0
+		yawaxis = 100
+		rollaxis = 0
+		pitchaxisDueToAoA = 0
+		brakeRudder = 0
+		maxdeflect = 20
+		isFlap = False
+		isSpoiler = False
+		flapDeflectionLevel = 0
+		maxdeflectFlap = 15
+		massMultiplier = 1
+		stagingEnabled = True
+		pitchaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		yawaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		rollaxis_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		pitchaxisDueToAoA_UIFlight
+		{
+			controlEnabled = True
+			minValue = -200
+			maxValue = 200
+			stepIncrement = 5
+		}
+		brakeRudder_UIFlight
+		{
+			controlEnabled = True
+			minValue = -100
+			maxValue = 100
+			stepIncrement = 5
+		}
+		maxdeflect_UIFlight
+		{
+			controlEnabled = True
+			minValue = -40
+			maxValue = 40
+			stepIncrement = 0.5
+		}
+		isFlap_UIFlight
+		{
+			controlEnabled = True
+		}
+		isSpoiler_UIFlight
+		{
+			controlEnabled = True
+		}
+		maxdeflectFlap_UIFlight
+		{
+			controlEnabled = True
+			minValue = -85
+			maxValue = 85
+			stepIncrement = 0.5
+		}
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			DeflectMore
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect more
+				guiName = Deflect more
+				category = Deflect more
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeflectLess
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Deflect less
+				guiName = Deflect less
+				category = Deflect less
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ActivateSpoiler
+			{
+				actionGroup = Brakes
+			}
+			IncreaseDeflect
+			{
+				actionGroup = None
+			}
+			DecreaseDeflect
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = SmallGearBay_4293824654
+	partName = Part
+	pos = 0.006800427,5.888177,3.052542
+	attPos = -0.1993179,0,-3.189662E-07
+	attPos0 = 1.439479,-0.1723881,-7.2879E-08
+	rot = 7.450581E-08,-1,-8.42937E-08,-1.490116E-08
+	attRot = 0,0,0,1
+	attRot0 = -0.5000001,0.4999999,0.5,0.5
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,mk2.1m.Bicoupler_4293910720
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLandingGear
+		isEnabled = True
+		BrakeTorque = 12
+		brakesEngaged = False
+		brakesEnabled = True
+		storedGearState = UNDEFINED
+		storedAnimationSpeed = 0
+		storedAnimationTime = 0
+		StartDeployed = True
+		stagingEnabled = True
+		BrakeTorque_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 30
+			stepIncrement = 1
+		}
+		StartDeployed_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			EnableBrakes
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable brakes
+				guiName = Enable brakes
+				category = Enable brakes
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableBrakes
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable brakes
+				guiName = Disable brakes
+				category = Disable brakes
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LowerLandingGear
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RaiseLandingGear
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = Gear
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleSteering
+		isEnabled = True
+		steeringLocked = True
+		invertSteering = False
+		stagingEnabled = True
+		EVENTS
+		{
+			UnLockSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Unlock Steering
+				guiName = Unlock Steering
+				category = Unlock Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LockSteering
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lock Steering
+				guiName = Lock Steering
+				category = Lock Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Invert Steering
+				guiName = Invert Steering
+				category = Invert Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			InvertSteeringAction
+			{
+				actionGroup = None
+			}
+			LockSteeringAction
+			{
+				actionGroup = None
+			}
+			UnlockSteeringAction
+			{
+				actionGroup = None
+			}
+			ToggleSteeringAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleConstrainPosition
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		stagingEnabled = True
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSteering
+		steeringEnabled = False
+		steeringInvert = False
+	}
+	MODULE
+	{
+		name = ModuleWheelMotorSteering
+		steeringEnabled = False
+		steeringInvert = False
+	}
+	MODULE
+	{
+		name = ModuleWheelBrakes
+		brakeTweak = 100
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		position = 0
+		stateString = Deployed
+	}
+}
+PART
+{
+	part = SmallGearBay_4293531974
+	partName = Part
+	pos = 1.068053,5.831499,-0.9062798
+	attPos = 1.061251,0.9421519,0.3811713
+	attPos0 = 0,-1.794583,0.9156135
+	rot = 0,-0.9998665,0.01633616,0
+	attRot = 0,-0.9999999,0,0
+	attRot0 = 0,-0.695461,0.7185639,0
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = SmallGearBay_4293531742
+	srfN = srfAttach,M2X.InverterFuselage_4294070242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLandingGear
+		isEnabled = True
+		BrakeTorque = 12
+		brakesEngaged = False
+		brakesEnabled = True
+		storedGearState = UNDEFINED
+		storedAnimationSpeed = 0
+		storedAnimationTime = 0
+		StartDeployed = True
+		stagingEnabled = True
+		BrakeTorque_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 30
+			stepIncrement = 1
+		}
+		StartDeployed_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			EnableBrakes
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable brakes
+				guiName = Enable brakes
+				category = Enable brakes
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableBrakes
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable brakes
+				guiName = Disable brakes
+				category = Disable brakes
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LowerLandingGear
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RaiseLandingGear
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = Gear
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleSteering
+		isEnabled = True
+		steeringLocked = True
+		invertSteering = False
+		stagingEnabled = True
+		EVENTS
+		{
+			UnLockSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Unlock Steering
+				guiName = Unlock Steering
+				category = Unlock Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LockSteering
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lock Steering
+				guiName = Lock Steering
+				category = Lock Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Invert Steering
+				guiName = Invert Steering
+				category = Invert Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			InvertSteeringAction
+			{
+				actionGroup = None
+			}
+			LockSteeringAction
+			{
+				actionGroup = None
+			}
+			UnlockSteeringAction
+			{
+				actionGroup = None
+			}
+			ToggleSteeringAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleConstrainPosition
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		stagingEnabled = True
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSteering
+		steeringEnabled = False
+		steeringInvert = False
+	}
+	MODULE
+	{
+		name = ModuleWheelMotorSteering
+		steeringEnabled = False
+		steeringInvert = False
+	}
+	MODULE
+	{
+		name = ModuleWheelBrakes
+		brakeTweak = 100
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		position = 0
+		stateString = Deployed
+	}
+}
+PART
+{
+	part = SmallGearBay_4293531742
+	partName = Part
+	pos = -1.054448,5.831499,-0.9062792
+	attPos = -1.061251,0.9421525,0.3811713
+	attPos0 = 0,-1.794583,0.9156135
+	rot = 0,-0.9998665,0.01633612,0
+	attRot = 0,-0.9999999,0,0
+	attRot0 = 0,-0.695461,0.7185638,0
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = SmallGearBay_4293531974
+	srfN = srfAttach,M2X.InverterFuselage_4294070242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleLandingGear
+		isEnabled = True
+		BrakeTorque = 12
+		brakesEngaged = False
+		brakesEnabled = True
+		storedGearState = UNDEFINED
+		storedAnimationSpeed = 0
+		storedAnimationTime = 0
+		StartDeployed = True
+		stagingEnabled = True
+		BrakeTorque_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 30
+			stepIncrement = 1
+		}
+		StartDeployed_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			EnableBrakes
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Enable brakes
+				guiName = Enable brakes
+				category = Enable brakes
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableBrakes
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Disable brakes
+				guiName = Disable brakes
+				category = Disable brakes
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LowerLandingGear
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Lower Gear
+				guiName = Lower Gear
+				category = Lower Gear
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RaiseLandingGear
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Raise Gear
+				guiName = Raise Gear
+				category = Raise Gear
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = Gear
+			}
+			BrakesAction
+			{
+				actionGroup = Brakes
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleSteering
+		isEnabled = True
+		steeringLocked = True
+		invertSteering = False
+		stagingEnabled = True
+		EVENTS
+		{
+			UnLockSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Unlock Steering
+				guiName = Unlock Steering
+				category = Unlock Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LockSteering
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lock Steering
+				guiName = Lock Steering
+				category = Lock Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			InvertSteering
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Invert Steering
+				guiName = Invert Steering
+				category = Invert Steering
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			InvertSteeringAction
+			{
+				actionGroup = None
+			}
+			LockSteeringAction
+			{
+				actionGroup = None
+			}
+			UnlockSteeringAction
+			{
+				actionGroup = None
+			}
+			ToggleSteeringAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleConstrainPosition
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleLight
+		isEnabled = True
+		isOn = False
+		lightR = 1
+		lightG = 1
+		lightB = 1
+		stagingEnabled = True
+		lightR_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightG_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		lightB_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			LightsOff
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lights Off
+				guiName = Lights Off
+				category = Lights Off
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			LightsOn
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Lights On
+				guiName = Lights On
+				category = Lights On
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleLightAction
+			{
+				actionGroup = Light
+			}
+			LightOnAction
+			{
+				actionGroup = None
+			}
+			LightOffAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSteering
+		steeringEnabled = False
+		steeringInvert = False
+	}
+	MODULE
+	{
+		name = ModuleWheelMotorSteering
+		steeringEnabled = False
+		steeringInvert = False
+	}
+	MODULE
+	{
+		name = ModuleWheelBrakes
+		brakeTweak = 100
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		position = 0
+		stateString = Deployed
+	}
+}
+PART
+{
+	part = wingStrake_4293340946
+	partName = Part
+	pos = 0.5446417,6.527069,-0.1748977
+	attPos = -1.192093E-07,0.1251808,0
+	attPos0 = 0.5378395,-0.2494964,0.5012679
+	rot = 0.327155,0.591116,0.6322363,0.3792479
+	attRot = -0.04361939,0,0,0.9990482
+	attRot0 = -0.03683529,0.8650407,0.02907648,0.4995023
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.03442
+	modSize = (0.0, 0.0, 0.0)
+	sym = wingStrake_4293340862
+	srfN = srfAttach,M2X.InverterFuselage_4294070242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = wingStrake_4293340862
+	partName = Part
+	pos = -0.5310369,6.527069,-0.1748974
+	attPos = 2.384186E-07,0.1251808,0
+	attPos0 = -0.5378395,-0.2494962,0.5012679
+	rot = 0.6322364,0.379248,0.3271549,0.5911159
+	attRot = -0.04361939,0,0,0.9990482
+	attRot0 = 0.02907656,0.4995022,-0.03683535,0.8650406
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0.03442
+	modSize = (0.0, 0.0, 0.0)
+	sym = wingStrake_4293340946
+	srfN = srfAttach,M2X.InverterFuselage_4294070242
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FARWingAerodynamicModel
+		isEnabled = True
+		massMultiplier = 1
+		stagingEnabled = True
+		massMultiplier_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = GeometryPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FARAeroPartModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
