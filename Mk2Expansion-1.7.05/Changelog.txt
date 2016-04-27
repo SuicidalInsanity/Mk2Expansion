@@ -1,0 +1,282 @@
+Version 1.7.05
+===============================================================
+-Tweaked Afterburn VelCurve: should be a bit better at sub-mach
+-tweaked hyperblast velcurve: reduced speed needed for effective thrust production
+-readded mod compatibility MM patches
+-tweaked Pluto engine FX
+-added radiator functionality to Pluto NTR
+-added radiator functionality to Nuk-3 fission reactor
+-Model rework: shrouded landing leg NOTE: Leg functional, but still somewhat wonky due to 1.1 wheel/leg physics
+-New PArt:Right angle L hub
+
+Version 1.7.04
+===========================================
+-IFS updated to 1.20 to fix previous version no longer working
+-Wirligig and Banshee manufacturer typo corrected, parts now included in manufacturer's tab
+
+Version 1.7.03
+===========================================
+1.1 update
+-New example crafts
+-All parts now have uniform M2X prefix - this will probaly break saved/inflight crafts
+-Model Rework: ESTOC now has bottom attach node, fairing, rocket mode heat FX
+-Model Rework: Linear Aerospike now has bottom attach node, fairing
+-Model Rework: Ion Engine now has fairing, bottom node
+-Model Rework: R-71 cockpit has been lengthened, given minor cosmetic tweaks; may break saved craft
+-Model Rework; P-G0 radial VTOL engine has been completely remade
+-Model Rework: J. Edgars have been combined into one part; this might break saved/in-flight craft
+-Model Rework: shockcone, now has thermal animation
+-Model Rework: RCS blister model reworked, now has multiple variants
+-Model Rework: Shrouded solar panel completely reworked
+-New Part: OMS Blister - more powerful LF/O version of the Configurable RCS blister
+-New Part: Mk2 subsonic intake
+-New Part: Banshee Lift Fan radial variant
+-New Part: low-profile Aligned docking port
+-Model retexture: mk2 Precooler
+-New FX; AARE and AASRBs now have custom FX
+-Fixed Air-Augmented engines mode switch dual activation issue
+-Mk2Science Lab IVA tweaked
+-Afterburn Ramjet thrust curve tweaked to provide more power at low mach
+-CB-C cockpit LiquidFuel tank removed
+-Science Lab science/data yields rebalanced
+-Alternate 4 seat science lab IVA config added
+-all parts now have search tags
+-part Depreciation: Mk2 inline Drill, Mk2 ISRU refienry, Mk2 Generator, Mk2 Ore Tank; parts have been spun off into Stockalike Mining Extension; this might break saved/in-flight craft
+
+Version 1.7.01 prerelease
+================================
+new part: mk2 inline drill, for real this time
+New part: mk2 ISRu refinery, ditto
+AASRBs now have increased intakeAtm storage and intakes now have mach curves buffing their intake ability at low speed
+tweaked AASRB intakeAtm consumption, should be a bit easier to use
+tweaked AASRB thrust down slightly to improve burn time
+tweaked Sledgehammer AARE, should function properly now switching engine modes
+Air Augmented engines now have max thrust/ISP listed in their part descriptions
+Tweaked Banshee, now uses FanIntakeAir to prevent Banshee from acting as a 2m intake for any other jets on the craft
+Vector turbojet alternator now functions during afterburner operation
+
+Version 1.7 prerelease
+==============================
+-New part: Mk2 Inline ISRU drill
+-New Part: Mk2 ISRU refinery
+-New part: Mk2 ore tank
+-New Part: Mk2 FuelCell
+-New part: 'Hyperblast" Mk2 Scramjet
+-New part: 'Boost-O-Tron' Air-Augmented radial SRB
+-New Part: 'Mallet' Air-Augmented radial SRB
+-New part: 'Sledgehammer' Air-Augmented Rocket Engine
+-New part: 'Banshee' Mk2 Lift fan
+-New Part: Linear tricoupler
+-New Part: Mk2 Radial Attack mount A
+-New Part: Mk2 Radial Attach Mount B
+-Air Intake intake volumes and masses rebalanced to be more inline with squad values
+-Model rework; 'Rontgen' no longer has integrated air intakes, now uses standard intakes
+-Fixed 'Wirligig' reverse thrust
+-Model rework: Service Bay collider issue fixed, added IFS configurable tanks
+-Model rework: Spadetail now has IFS alternate models
+-Model Rework: CBC Cockpit Viper Variant mesh slightly tweaked, retextured
+-Model Rework: Chine symmetry fixed, will now properly place when attaching chines to other chines in Mirror symmetry mode
+-Fixed CB-C intake NoAttach colliders
+-Engine colliders reworked; parts can now be placed on engine housings
+-reworked applicable parts' ModuleTestSubject 
+-Model rework: Cockpits now have togglable window emissives
+-Model Rework; Mk2 hubs now have configurable fuel tanks
+-Model retextures: changed model textures on some models to remove depeciated SQUAD texture references 
+-J. Edgar fuselage VTOL engine now uses the BDAnimation module rather than AnimateGeneric
+
+Version 1.6.10
+==============================
+-KSP 1.05 update
+-Fixed missing textures from Squad part depreciation
+-New Part: F4-C Turboprop Engine
+-New Part: Mk2 Airlock Endplate
+-New Part: R-4 'Mongrel' Rocket VTOL engine
+-New part: Mk2 Precooler
+-Jet engines now have thrustdamagemultipliers
+-G-120 "Vector" Turbojet Engine now has an afterburner
+-SC-TD Multipurpose cockpit IVA tweaks
+-Mk2 Sci-lab IVA tweaks
+-Fixed Shrouded solar panel symmetry
+-Chines now have stack attach nodes
+-Firespitter added as a dependancy
+-Reduced NUK-3 Aircraft Fission reactor weight
+-Reduced 'Spirit' Ion Engine Ec requirement
+-Reduced 'Spirit' Ion Engine ISP by 20%
+
+Version 1.6.05
+==============================
+-Fixed HS-X cockpit colliders, FAR voxelization should now work properly
+-Fixed AJE MM patch, CB-C cockpit intakes now work with AJE
+
+Version 1.6
+============================
+-New Mesh: CB-C cockpit now has three different flavors via IFS mesh switch
+-New IVA: Cb-C cockpit now with custom IVA
+-New IVA: Mk2 Scilab now has custom IVA
+-Model Rework: R-71 cockpit mesh error fixed
+-Model Rework: 'Vector" Turbojet new model
+-Model Rework; 'Afterburn' Ramjet new model
+-New FX for the Afterburn and Vector
+-FX fix; Pluto now with 100% more smoke trail
+-Part respec: 'J. Edgar eKSPngines returned from legacy, are now heavy lift VTOL engines
+-Part respec: 'Pegaus', 'Siddeley', 'Jumpjet' engines thrust buffed ~20%, should make fighter VTOls a bit easier to build
+-New part: Short mk2 bicoupler
+-New Part; mk2 Shockcone Intake
+-New part: short mk2-size2 adapter
+-New part: Radial landing leg w/ aeroshell
+-New part: mk2 conformal solar panel
+-Added CLS compatibility MM patch
+-Added ASET IVA MM patch
+-NFE compatibility and NTJ_decay patched tweaked, should no longer conflict with the Mk2 KSPI integration mod
+
+
+Version !.5.1
+======================
+Version 1.5 hotfix
+-reactor colliders fixed, Ladder now works
+-Typo corrected in 'Spirit' ion engine cfg
+-Several parts tweaked, FAR voxelization should now work correctly
+-AJE MM patch updated to work with latest AJE version
+
+
+Version 1.5
+=================
+-New Part: 'Pegasus' Fuselage VTOL Engine
+-New Part; 'Siddeley' Fuselage VTOL engine
+-New part:'Jumpjet' Radial VTOL engine
+-New Part: fighter cockpit
+-New Part: Mk2 tail boom
+-New Part: Mk2 reactor
+-New Part: 'Spirit' Mk2 Ion Engine
+-Mk2 Science Lab rebalanced - increased weight to 2.5, max science to 500
+-Mk2 service bay fixed: Should now shield parts correctly
+-Model rework: HS-X cockpit retextured
+-Model rework: R-71 cockpit retextured
+-Model rework: Inverter tank retextured
+-Model rework: SC-TD dropship cockpit canopy enlarged, front hatch removed
+-model rework: 'Rontgen' atomic jet remodeled
+-IVAs reworked, windows adjusted
+-Interplanetery Launchpads MM patch added - science lab workshop compatibility
+-New Engine FX
+-J. Edgar VTOL engines move to legacy folder pending final depreciation in ver 1.6
+
+Version 1.4.6
+==================
+-Fixed Mk2 science lab
+
+Version 1.4.5
+==============
+KSP 1.03 update
+-thrust of all jet engines nerfed ~30% to bring them inline with stock jets
+-Isp of all jets nerfed ~30-50% to bring them inline with stock jets
+-Velcurves of jets tweaked slightly
+-'Afterburn' TRJ now uses the new shockdiamond jet FX
+-Pluto thrust buffed slightly and heat production reduced slightly
+-'Wedge' Aerospike weight reduced slightly
+-cockpits now have appropriate breakingforce/torque values
+-all engines now have a skinInternalConductionMult value
+-all parts max temp increased slightly to be inline with stock mk2 parts
+ 
+Version 1.4.3
+=============
+-Blade cockpit center seat adjusted to fix Kerbal head clipping
+-5-Way Mk2 RCS Block RCS transform fixed
+-fixed R-71 RPM MM Patch
+
+Version 1.4.1
+============
+-new part: Dropship cockpit w/IVA
+-new part: Advanced Hypersonic cockpit W/IVA
+-new part: Mk2-1 single seat cockpit w/IVA
+-new part: tricoupler
+-new part: R4-D Nuclear Thermal Jet
+-new part: MATTOCK engine
+-new part: Mk2 crewed Science lab jr.
+-model rework: Hypersonic Nosecone; new texture, RCS thrusters
+-model rework: nosecap; new texture, rCS thrusters
+-fixed CTT MM patch - Wing root chines no longer in improved Nuclear Propulsion
+-added RPM IVA MM patch
+-CRP now bundled
+
+Version 1.3.1
+================
+-model rework: PLUTO
+-model rework: Fishhead cockpit
+-fixed RCS transform of the 2x5way RCS blister
+-fixed service tank not holding resources
+-corrected syntax of some of the MM patches
+-added AJE compatibility MM patch
+
+Version 1.3.0
+=============
+-added new parts: mk1 scale chine pieces, short, long, end cap
+-added new parts: Wing root chine pieces, short, long, adapter
+-added new part: Service bay
+-added new part: Service tank
+-added new part: Mk2 Shielded Docking Port
+-added new example craft (M2X) F-30 Solaire
+-added thumbs to example craft
+-added FAR compatibility
+-added DRE compatibility
+-added Community Tech Tree compatibility
+-added Modular Fuel Tanks compatibility
+
+
+Version 1.2.1
+=============
+-depreciated KineTechAnimation; Two-State Intake now using ModuleAnimategeneric, Two-State Intake now must be closed manually and is no longer tied to animation state. In exchange;
+-now 100% more CKAN compatibility
+-fixed various typos
+
+Version 1.2.0
+=============
+-Added new part: PG RCS Chine
+-Added new part: RC RCS Chine
+-added new part: SC-01 mk2 RCSAS segment
+-added new part: Aerodynamic 5-way RCS Blister
+-added new part: Heavy duty aerodynamic 5-way RCS Blister
+-added new part: heavy duty form fitting 5-way RCS block
+-added new part: mk2 OMS pod
+-added new part; mk2 decoupler
+-added new part: T-junction
+-added new part: X junction
+-added new part: Linear Aerospike
+-tweaked Turbojet thrust curve - now more competative with the J-X4
+-tweaked Ramjet thrust curve - now superior to J-X4, still less powerful below .5 mach 
+-tweaked Vtol jet thrust curve - fixed underpoweredness
+-tweaked ESTOC thrust curve - should perform a little better now
+-tweaked PLUTo. now has bottom attach node, fairing
+-tweaked Fishhead IVA - improved lighting and window transparency
+-new example craft: (M2X) Stork
+-new file structure; parts now organized by category
+-Hotrockets config, courtesy of ekliptical
+-parts now have specular shaders
+
+Version 1.1.0
+=============
+-Added new part: PLUTO engine
+-Added new part: Nosecap
+-Added new part: Fishhead cockpit w/IVA
+-tweaked Turbojet thrust curve - slightly higher max speed
+-tweaked ramjet thrust curve - now produces less thrust subsonic
+-tweaked VTOL thrust to 170
+-cosmetic tweak to all parts, Z-lighting bugs squashed, some new UV maps
+-Implemented InterstellarFuelSwitch - fuel tanks can now be LF, LF/O or structural, optional patch
+-Interstellarfuelswitch and ModuleManager bundled
+-Added new corporation Insanity Aerospace as manufacturer of all parts for ease of editor sorting
+
+Version 1.0.2
+=============
+hotfix for incorrect file structure
+Removed WIP fishhead cockpit
+
+Version 1.0.1
+=============
+-Added new part: J Edgar VTOL engine in stack and inline flavors
+-Tweaked ESTOC max thrust down by 25%
+
+
+
+
+
+
