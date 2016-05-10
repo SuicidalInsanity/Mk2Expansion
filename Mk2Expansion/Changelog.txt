@@ -1,3 +1,10 @@
+Version 1.7.08
+============================================
+-Fixes editor thrust scaling with Air-Augmented SRBS
+-AASRB thrust values tweaked to fix mode switch discrepancy
+-Buffed Sledgehammer thrust
+-Updates buldled Modulemanager plugin to latest version
+
 Version 1.7.07
 ===============================================================
 -All cockpits and scilab now have IVA masks
