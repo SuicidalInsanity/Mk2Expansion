@@ -1,3 +1,9 @@
+Version 1.7.10
+============================================================
+-Tweaks Mk2 Aligning docking port collider, should now work wth standard size 1 clamp-o-trons
+-Added Kerbal Atomics compatibility MM patch.
+-Added Tweakscale compatibility MM patch
+
 Version 1.7.08
 ============================================
 -Fixes editor thrust scaling with Air-Augmented SRBS
