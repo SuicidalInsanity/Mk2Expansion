@@ -1,3 +1,14 @@
+Version 1.7.11
+========================================================
+-Adds LH2 tankswitch options when Kerbal Atomics is installed
+-Removed Pluto LH2 conversion when NFE is installed, LH2 conversion moved to Kerbal Atomics patch
+-Minor tweaks to IFS tank switch tank values for LF on some parts
+-Added IFS support for L hub part
+-Buffed NUK-3 integrated radiator strength
+-
+
+
+
 Version 1.7.10
 ============================================================
 -Tweaks Mk2 Aligning docking port collider, should now work wth standard size 1 clamp-o-trons
