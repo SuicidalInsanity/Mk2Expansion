@@ -1,6 +1,6 @@
 ship = M2X Grasshopper
 version = 1.1.0
-description = A light, short range easy-to-fly V/STOL trainer craft.
+description = A light, short range easy-to-fly V/STOL trainer craft. AG 1: Toggle hover mode.
 type = SPH
 size = 10.12522,3.693539,14.26646
 PART

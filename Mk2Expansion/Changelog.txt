@@ -1,3 +1,12 @@
+Version 1.7.12
+===========================================================
+-Model Rework: Engine Shroud now has third variant for long engines/combo engine shroud empennage
+-Fixes RPM installs attempting to load ASET IVA configs instead of RPM configs
+-Fixes SC-TD cockpit overlaymask IVA clipping issue
+-Adds SC-TD cockpit RPM IVA config
+-Adjusted HS-X cockpit crew seat positions
+-Minor fixes to CB-C RPM IVA config
+
 Version 1.7.11
 ========================================================
 -Adds LH2 tankswitch options when Kerbal Atomics is installed
@@ -5,9 +14,6 @@ Version 1.7.11
 -Minor tweaks to IFS tank switch tank values for LF on some parts
 -Added IFS support for L hub part
 -Buffed NUK-3 integrated radiator strength
--
-
-
 
 Version 1.7.10
 ============================================================
