@@ -1,8 +1,8 @@
 ship = M2X Hyperblast
-version = 1.1.0
+version = 1.1.3
 description = The Hyperblast Scramjet testbed is an airframe that makes the Speed Demon look slow. With a powered flight ceiling of 35000m and a top speed exceeding Kerbin's escape velocity, this is an aircraft capable of making orbit on jet power alone. In the event that happens, the craft is fitted with a pair of OMS thrusters for circularization or de-orbiting.¨¨AG 1: toggle OMS
 type = SPH
-size = 13.14403,5.855179,14.5626
+size = 13.14403,5.855179,14.5933
 PART
 {
 	part = mk2Cockpit.Inline_4294562586
@@ -615,7 +615,25 @@ PART
 	{
 		name = ModuleWheelSuspension
 		isEnabled = True
+		springTweakable = 1
+		damperTweakable = 1
+		suspensionPos = (-1, -1, -1)
+		autoBoost = 0
 		stagingEnabled = True
+		springTweakable_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		damperTweakable_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
 		EVENTS
 		{
 			ToggleStaging
@@ -639,15 +657,15 @@ PART
 	{
 		name = ModuleWheelBrakes
 		isEnabled = True
-		brakeTweak = 100
+		brakeTweakable = 100
 		brakeInput = 0
 		stagingEnabled = True
-		brakeTweak_UIFlight
+		brakeTweakable_UIFlight
 		{
 			controlEnabled = True
 			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.1
+			maxValue = 200
+			stepIncrement = 5
 		}
 		EVENTS
 		{
@@ -953,7 +971,7 @@ PART
 {
 	part = mk2.1m.AdapterLong_4294260606
 	partName = Part
-	pos = 0.07150413,9.811769,2.463982
+	pos = 0.07150413,9.811769,2.463984
 	attPos = 0,0,0
 	attPos0 = 0,3.125,-3.72529E-07
 	rot = 0,-0.7071068,-0.7071068,0
@@ -1037,7 +1055,7 @@ PART
 {
 	part = HeatShield1_4294249904
 	partName = Part
-	pos = 0.07150413,9.811769,4.419841
+	pos = 0.07150413,9.811769,4.419843
 	attPos = 0,0.05885792,-7.016411E-09
 	attPos0 = 0,1.897001,-2.261401E-07
 	rot = 0,-0.7071068,0.7071068,0
@@ -1049,7 +1067,7 @@ PART
 	dstg = 1
 	sidx = 1
 	sqor = 0
-	sepI = 1
+	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1236,7 +1254,7 @@ PART
 {
 	part = radPanelSm_4294183458
 	partName = Part
-	pos = -0.2295351,9.348975,2.149716
+	pos = -0.2295351,9.348975,2.149718
 	attPos = 0,7.152557E-07,0.1676503
 	attPos0 = 0.3010388,-0.3142638,-0.6304436
 	rot = 0.1403831,0.7057594,0.681061,0.1354704
@@ -1315,7 +1333,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -1332,7 +1350,7 @@ PART
 {
 	part = radPanelSm_4294183384
 	partName = Part
-	pos = 0.372543,9.348975,2.149716
+	pos = 0.372543,9.348975,2.149718
 	attPos = 0,1.430511E-06,0.1676503
 	attPos0 = -0.3010388,-0.3142638,-0.6304436
 	rot = 0.140383,-0.7057595,-0.681061,0.1354704
@@ -1411,7 +1429,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -1428,7 +1446,7 @@ PART
 {
 	part = radPanelSm_4294180866
 	partName = Part
-	pos = -0.2161119,10.26985,2.380869
+	pos = -0.2161119,10.26985,2.380871
 	attPos = -2.980232E-08,-0.08205867,-0.1658459
 	attPos0 = 0.2876157,-0.001053572,0.6239262
 	rot = -0.7057595,-0.1403831,-0.1354703,-0.681061
@@ -1507,7 +1525,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -1524,7 +1542,7 @@ PART
 {
 	part = radPanelSm_4294180792
 	partName = Part
-	pos = 0.3591201,10.26985,2.380871
+	pos = 0.3591201,10.26985,2.380873
 	attPos = 5.960464E-08,-0.08205795,-0.1658459
 	attPos0 = -0.2876157,-0.001053572,0.6239262
 	rot = 0.7057595,-0.1403831,-0.1354703,0.681061
@@ -1603,7 +1621,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -1620,7 +1638,7 @@ PART
 {
 	part = M2X.FF5WayRCS_4294145990
 	partName = Part
-	pos = -1.178617,9.811769,0.2360449
+	pos = -1.178617,9.811769,0.2360454
 	attPos = 0,0,0
 	attPos0 = -1.250121,0.8970713,-1.069392E-07
 	rot = 0.7071069,1.264406E-07,-1.685874E-07,0.7071068
@@ -1770,7 +1788,7 @@ PART
 {
 	part = M2X.FF5WayRCS_4294145762
 	partName = Part
-	pos = 1.321625,9.811769,0.2360447
+	pos = 1.321625,9.811769,0.2360451
 	attPos = 0,0,0
 	attPos0 = 1.250121,0.8970711,-1.069392E-07
 	rot = -1.99496E-07,0.7071067,0.7071069,9.55319E-08
@@ -1920,7 +1938,7 @@ PART
 {
 	part = mk2Fuselage_4294473910
 	partName = Part
-	pos = 0.07150413,9.811769,-3.786031
+	pos = 0.07150413,9.811769,-3.786033
 	attPos = 0,0,0
 	attPos0 = 0,-3.125,3.72529E-07
 	rot = -0.7071068,0,0,-0.7071068
@@ -1944,8 +1962,6 @@ PART
 	link = wingStrake_4294390916
 	link = radPanelEdge_4294498632
 	link = radPanelEdge_4294365338
-	link = airplaneTail_4294320786
-	link = airplaneTail_4294319574
 	link = strutConnector_4294007426
 	link = strutConnector_4294007326
 	attN = top,mk2Cockpit.Inline_4294562586
@@ -1999,7 +2015,7 @@ PART
 {
 	part = mk2FuselageShortLiquid_4294448810
 	partName = Part
-	pos = 0.07150413,9.811769,-6.598528
+	pos = 0.07150413,9.811769,-6.59853
 	attPos = 0,0,0
 	attPos0 = 0,-2.812501,3.352762E-07
 	rot = -0.7071068,0,0,-0.7071068
@@ -2016,13 +2032,13 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = M2X.SCRamjet_4294413520
 	link = wingConnector4_4294401038
 	link = wingConnector4_4294400990
 	link = strutConnector_4294006506
 	link = strutConnector_4294006144
 	link = M2X.RCSBlister_4294572174
 	link = M2X.RCSBlister_4294571818
+	link = M2X.SCRamjet_4294413520
 	attN = top,mk2Fuselage_4294473910
 	attN = bottom,M2X.SCRamjet_4294413520
 	EVENTS
@@ -2072,199 +2088,9 @@ PART
 }
 PART
 {
-	part = M2X.SCRamjet_4294413520
-	partName = Part
-	pos = 0.07150413,9.811769,-8.474004
-	attPos = 0,0,0
-	attPos0 = 0,-1.875463,2.235726E-07
-	rot = -0.7071068,0,0,-0.7071068
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 1
-	dstg = 0
-	sidx = 1
-	sqor = 1
-	sepI = 0
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	attN = top,mk2FuselageShortLiquid_4294448810
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
 	part = wingConnector4_4294401038
 	partName = Part
-	pos = -1.178533,9.811769,-6.593337
+	pos = -1.178533,9.811769,-6.593339
 	attPos = 0,0,0
 	attPos0 = -1.250039,0.005190849,-6.187975E-10
 	rot = -0.7071069,-2.107343E-07,2.528812E-07,-0.7071068
@@ -2323,10 +2149,10 @@ PART
 {
 	part = mk2FuselageShortLiquid_4294413010
 	partName = Part
-	pos = -3.369084,9.811769,-6.65173
+	pos = -3.369084,9.811769,-6.651732
 	attPos = 0,0,0
 	attPos0 = -2.190554,-0.05839396,1.473725E-07
-	rot = 0.7071071,2.914124E-07,-1.72203E-07,0.7071066
+	rot = 0.7071071,2.914124E-07,-1.72203E-07,0.7071065
 	attRot = -0.4999999,-0.4999999,-0.4999999,-0.4999999
 	attRot0 = -1.264405E-07,-1.140961E-07,-2.304034E-14,-1
 	mir = 1,1,1
@@ -2398,10 +2224,10 @@ PART
 {
 	part = M2X.Precooler_4294456532
 	partName = Part
-	pos = -3.369083,9.811768,-4.640036
+	pos = -3.369083,9.811768,-4.640038
 	attPos = 0,0,0
 	attPos0 = -7.152557E-07,2.011698,-1.340059E-07
-	rot = -0.7071068,2.587513E-13,-1.431924E-13,-0.7071068
+	rot = -0.7071068,3.241821E-13,-1.737805E-13,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 2.528811E-07,8.42937E-08,-3.278256E-07,-1
 	mir = 1,1,1
@@ -2506,59 +2332,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
 	RESOURCE
 	{
 		name = IntakeAir
@@ -2597,10 +2370,10 @@ PART
 {
 	part = M2X.Shockcone_4294455578
 	partName = Part
-	pos = -3.369083,9.811769,-3.097502
+	pos = -3.369083,9.811769,-3.097504
 	attPos = 0,0,0
 	attPos0 = -1.807275E-07,1.542536,-5.38586E-08
-	rot = -0.7071068,2.763362E-14,2.763363E-14,-0.7071068
+	rot = -0.7071068,5.287006E-14,3.723996E-14,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0,-8.487737E-15,-2.716564E-14,1
 	mir = 1,1,1
@@ -2702,59 +2475,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
 	RESOURCE
 	{
 		name = IntakeAir
@@ -2782,10 +2502,10 @@ PART
 {
 	part = structuralWing_4294369528
 	partName = Part
-	pos = -3.164053,10.57695,-5.492047
+	pos = -3.164053,10.57695,-5.492049
 	attPos = 0,0,0
 	attPos0 = 0.2050302,-0.8520126,-0.7651826
-	rot = 0.4304598,-0.5609853,-0.5609854,0.4304595
+	rot = 0.4304599,-0.5609852,-0.5609853,0.4304595
 	attRot = 0,0,0,1
 	attRot0 = -2.950279E-07,0.7933534,2.528811E-07,-0.6087615
 	mir = 1,1,1
@@ -2840,10 +2560,10 @@ PART
 {
 	part = elevon3_4294369168
 	partName = Part
-	pos = -2.926031,11.46526,-7.288789
+	pos = -2.926031,11.46526,-7.288793
 	attPos = 0,0,0
 	attPos0 = -0.9196473,-1.796739,1.147293E-07
-	rot = -0.4304593,0.5609856,0.5609856,-0.4304594
+	rot = -0.4304592,0.5609856,0.5609856,-0.4304593
 	attRot = -0.7071067,-0.7071067,0,0
 	attRot0 = 1.490116E-08,4.470348E-08,-4.619359E-07,-1
 	mir = 1,1,1
@@ -2872,7 +2592,7 @@ PART
 	{
 		name = ModuleControlSurface
 		isEnabled = True
-		mirrorDeploy = False
+		mirrorDeploy = True
 		usesMirrorDeploy = True
 		ignorePitch = False
 		ignoreYaw = False
@@ -2949,10 +2669,10 @@ PART
 {
 	part = M2X.Ramjet_4294441906
 	partName = Part
-	pos = -3.369084,9.811769,-8.527204
+	pos = -3.369084,9.811769,-8.527207
 	attPos = 0,0,0
 	attPos0 = 4.768371E-07,-1.875463,6.034665E-08
-	rot = -0.7071068,2.587513E-13,-1.431924E-13,-0.7071068
+	rot = -0.7071068,3.241821E-13,-1.737805E-13,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 2.528811E-07,8.42937E-08,-3.278256E-07,-1
 	mir = 1,1,1
@@ -3191,7 +2911,7 @@ PART
 		flowState = True
 		isTweakable = False
 		hideFlow = True
-		isVisible = True
+		isVisible = False
 		flowMode = Both
 	}
 }
@@ -3199,10 +2919,10 @@ PART
 {
 	part = structuralWing_4294384886
 	partName = Part
-	pos = -4.665068,9.811768,-5.843187
+	pos = -4.665068,9.811768,-5.843189
 	attPos = 0,0,0
 	attPos0 = -1.295987,0.8085448,2.98025E-07
-	rot = -0.7071072,-5.479095E-07,4.003954E-07,-0.7071065
+	rot = -0.7071072,-5.479095E-07,4.003954E-07,-0.7071064
 	attRot = 0,0,0,1
 	attRot0 = -4.214688E-08,-2.001435E-08,3.427267E-07,-1
 	mir = 1,1,1
@@ -3257,10 +2977,10 @@ PART
 {
 	part = elevon3_4294380566
 	partName = Part
-	pos = -5.519562,9.811769,-7.639931
+	pos = -5.519562,9.811769,-7.639935
 	attPos = 0,0,0
 	attPos0 = -0.8544924,-1.796739,-9.02523E-09
-	rot = 0.7071069,-4.044559E-13,3.617493E-13,0.7071068
+	rot = 0.7071069,-4.142036E-13,3.289208E-13,0.7071068
 	attRot = 0.4999999,0.4999999,0.4999999,-0.4999999
 	attRot0 = 2.528811E-07,1.043081E-07,-6.705523E-07,-1
 	mir = 1,1,1
@@ -3366,10 +3086,10 @@ PART
 {
 	part = GearMedium_4294294486
 	partName = Part
-	pos = -3.369075,9.203753,-5.843213
+	pos = -3.369075,9.203753,-5.843215
 	attPos = 5.750088E-06,5.662441E-06,-0.1228886
 	attPos0 = 2.217399E-06,0.8085121,0.730905
-	rot = 2.411492E-07,-1,-5.960464E-07,3.278255E-07
+	rot = 2.411492E-07,-1,-6.743496E-07,3.278255E-07
 	attRot = 0,-0.9999999,0,0
 	attRot0 = 1.109135E-07,-0.7071069,0.7071067,1.109133E-07
 	mir = 1,1,1
@@ -3450,7 +3170,25 @@ PART
 	{
 		name = ModuleWheelSuspension
 		isEnabled = True
+		springTweakable = 1
+		damperTweakable = 1
+		suspensionPos = (-1, -1, -1)
+		autoBoost = 0
 		stagingEnabled = True
+		springTweakable_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		damperTweakable_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
 		EVENTS
 		{
 			ToggleStaging
@@ -3474,15 +3212,15 @@ PART
 	{
 		name = ModuleWheelBrakes
 		isEnabled = True
-		brakeTweak = 100
+		brakeTweakable = 100
 		brakeInput = 0
 		stagingEnabled = True
-		brakeTweak_UIFlight
+		brakeTweakable_UIFlight
 		{
 			controlEnabled = True
 			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.1
+			maxValue = 200
+			stepIncrement = 5
 		}
 		EVENTS
 		{
@@ -3788,10 +3526,10 @@ PART
 {
 	part = rcsTankMini_4294038868
 	partName = Part
-	pos = -4.322175,9.811769,-7.82155
+	pos = -4.322175,9.811769,-7.821554
 	attPos = 0.5473113,-0.3003603,2.799866E-07
 	attPos0 = -1.500401,-0.8694564,-6.632384E-07
-	rot = 0.7071072,2.950279E-07,-2.107342E-07,0.7071065
+	rot = 0.7071072,2.950279E-07,-2.107342E-07,0.7071064
 	attRot = 0,0,0,1
 	attRot0 = 1.264406E-07,-2.468907E-08,-2.980223E-08,1
 	mir = 1,1,1
@@ -3837,10 +3575,10 @@ PART
 {
 	part = strutCube_4294047138
 	partName = Part
-	pos = -4.36805,9.812047,-8.125292
+	pos = -4.36805,9.812047,-8.125296
 	attPos = 0.124537,-3.814697E-06,1.484295E-08
 	attPos0 = -0.1704123,-0.3037368,-0.0002772729
-	rot = -0.7071068,-5.652334E-14,-2.637756E-14,0.7071069
+	rot = -0.7071068,-2.223062E-14,7.051358E-16,0.7071069
 	attRot = 0,0,0,-0.9999999
 	attRot0 = -1,-3.576279E-07,-5.960466E-08,-4.214685E-07
 	mir = 1,1,1
@@ -3871,10 +3609,10 @@ PART
 {
 	part = omsEngine_4294054164
 	partName = Part
-	pos = -4.299857,9.812051,-8.3281
+	pos = -4.299857,9.812051,-8.328104
 	attPos = -0.03876343,0.1685598,1.649559E-06
 	attPos0 = 0.1069565,0.0342485,2.158016E-06
-	rot = 0.5,0.5,0.5,0.5000002
+	rot = 0.4999999,0.5,0.4999999,0.5000001
 	attRot = 0,0,-0.9999999,0
 	attRot0 = 0.7071069,-1.123711E-07,0.7071068,1.12371E-07
 	mir = 1,1,1
@@ -3978,10 +3716,10 @@ PART
 {
 	part = standardNoseCone_4294068940
 	partName = Part
-	pos = -4.322175,9.811769,-8.259053
+	pos = -4.322175,9.811769,-8.259057
 	attPos = 0,0,0
 	attPos0 = 5.029142E-07,-0.4375019,3.840622E-07
-	rot = 0.7071068,5.652334E-14,2.637756E-14,-0.7071069
+	rot = 0.7071068,2.223062E-14,-7.051358E-16,-0.7071069
 	attRot = 0.9999999,0,0,0
 	attRot0 = 1,3.576279E-07,5.960466E-08,4.214685E-07
 	mir = 1,1,1
@@ -4035,10 +3773,10 @@ PART
 {
 	part = rcsTankMini_4294002610
 	partName = Part
-	pos = -4.322175,9.811769,-7.446553
+	pos = -4.322175,9.811769,-7.446557
 	attPos = 0,0,0
 	attPos0 = -2.607701E-07,0.374998,-3.924129E-07
-	rot = 0.7071069,-1.029981E-13,1.004859E-13,0.7071068
+	rot = 0.7071069,-5.456214E-14,4.735207E-14,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -5.057622E-07,-5.960463E-08,3.576278E-07,1
 	mir = 1,1,1
@@ -4081,10 +3819,10 @@ PART
 {
 	part = standardNoseCone_4294107162
 	partName = Part
-	pos = -4.322175,9.811769,-7.009054
+	pos = -4.322175,9.811769,-7.009058
 	attPos = 0,0,0
 	attPos0 = 4.842757E-08,0.4374982,-1.527547E-08
-	rot = 0.7071068,5.024325E-15,1.256093E-15,0.7071069
+	rot = 0.7071068,-3.766059E-14,1.873016E-14,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0,-2.092223E-14,-5.558735E-14,1
 	mir = 1,1,1
@@ -4138,10 +3876,10 @@ PART
 {
 	part = smallCtrlSrf_4294379598
 	partName = Part
-	pos = -1.643523,9.811769,-7.530846
+	pos = -1.643523,9.811769,-7.53085
 	attPos = 0,0,0
 	attPos0 = -0.4649902,-0.9374998,2.975248E-07
-	rot = -0.7071068,3.265794E-14,-2.047401E-13,-0.7071069
+	rot = -0.7071068,3.039827E-14,-2.18326E-13,-0.7071068
 	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
 	attRot0 = -8.42937E-08,2.980233E-08,3.278256E-07,1
 	mir = 1,1,1
@@ -4170,7 +3908,7 @@ PART
 	{
 		name = ModuleControlSurface
 		isEnabled = True
-		mirrorDeploy = True
+		mirrorDeploy = False
 		usesMirrorDeploy = True
 		ignorePitch = False
 		ignoreYaw = False
@@ -4247,7 +3985,7 @@ PART
 {
 	part = wingConnector4_4294400990
 	partName = Part
-	pos = 1.321541,9.811769,-6.593337
+	pos = 1.321541,9.811769,-6.593339
 	attPos = 0,0,0
 	attPos0 = 1.250039,0.005190849,-6.187975E-10
 	rot = 2.837897E-07,-0.7071067,-0.7071069,-1.798256E-07
@@ -4306,7 +4044,7 @@ PART
 {
 	part = mk2FuselageShortLiquid_4294390340
 	partName = Part
-	pos = 3.512095,9.811769,-6.651731
+	pos = 3.512096,9.811769,-6.651733
 	attPos = 0,0,0
 	attPos0 = -2.190554,-0.05839444,-3.487213E-07
 	rot = -0.7071071,2.914122E-07,-1.72203E-07,-0.7071065
@@ -4381,10 +4119,10 @@ PART
 {
 	part = M2X.Precooler_4294389966
 	partName = Part
-	pos = 3.512095,9.811768,-4.640036
+	pos = 3.512096,9.811768,-4.640038
 	attPos = -3.410605E-13,-1.907349E-06,1.364242E-12
 	attPos0 = 1.192093E-06,2.011698,-3.035796E-07
-	rot = -0.7071068,-8.855324E-14,3.202987E-14,-0.7071068
+	rot = -0.7071068,-8.774429E-14,3.8165E-15,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -1.685874E-07,8.429366E-08,-3.278255E-07,1
 	mir = 1,1,1
@@ -4489,59 +4227,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
 	RESOURCE
 	{
 		name = IntakeAir
@@ -4580,10 +4265,10 @@ PART
 {
 	part = M2X.Shockcone_4294389718
 	partName = Part
-	pos = 3.512095,9.811769,-3.097501
+	pos = 3.512096,9.811769,-3.097503
 	attPos = 0,0,0
 	attPos0 = 6.575648E-07,1.542536,-4.439367E-07
-	rot = -0.7071068,-3.831027E-14,-3.831027E-14,-0.7071068
+	rot = -0.7071068,-4.75499E-14,-7.657223E-14,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0,-6.317342E-15,6.196745E-15,1
 	mir = 1,1,1
@@ -4685,59 +4370,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
 	RESOURCE
 	{
 		name = IntakeAir
@@ -4765,10 +4397,10 @@ PART
 {
 	part = structuralWing_4294368542
 	partName = Part
-	pos = 3.307065,10.57695,-5.492047
+	pos = 3.307066,10.57695,-5.49205
 	attPos = 0,0,0
 	attPos0 = -0.2050306,-0.8520128,-0.7651823
-	rot = 0.5609856,-0.4304592,-0.4304596,0.5609854
+	rot = 0.5609857,-0.4304592,-0.4304596,0.5609854
 	attRot = 0,0,0,1
 	attRot0 = -1.860064E-07,0.6087614,2.226398E-07,-0.7933534
 	mir = 1,1,1
@@ -4823,10 +4455,10 @@ PART
 {
 	part = elevon3_4294368500
 	partName = Part
-	pos = 3.069042,11.46526,-7.288788
+	pos = 3.069043,11.46526,-7.288791
 	attPos = 0,0,0
 	attPos0 = -0.9196473,-1.796739,1.147293E-07
-	rot = 0.5609857,-0.4304592,-0.4304592,0.5609857
+	rot = 0.5609857,-0.4304591,-0.4304592,0.5609856
 	attRot = -0.7071067,-0.7071067,0,0
 	attRot0 = 1.490116E-08,4.470348E-08,-4.619359E-07,-1
 	mir = 1,1,1
@@ -4855,7 +4487,7 @@ PART
 	{
 		name = ModuleControlSurface
 		isEnabled = True
-		mirrorDeploy = True
+		mirrorDeploy = False
 		usesMirrorDeploy = True
 		ignorePitch = False
 		ignoreYaw = False
@@ -4932,10 +4564,10 @@ PART
 {
 	part = M2X.Ramjet_4294389514
 	partName = Part
-	pos = 3.512095,9.811769,-8.527205
+	pos = 3.512096,9.811769,-8.527209
 	attPos = -1.192092E-06,-6.198883E-06,9.536785E-07
 	attPos0 = -2.860506E-14,-1.875463,2.184363E-07
-	rot = -0.7071068,-8.855324E-14,3.202987E-14,-0.7071068
+	rot = -0.7071068,-8.774429E-14,3.8165E-15,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -1.685874E-07,8.429366E-08,-3.278255E-07,1
 	mir = 1,1,1
@@ -5174,7 +4806,7 @@ PART
 		flowState = True
 		isTweakable = False
 		hideFlow = True
-		isVisible = True
+		isVisible = False
 		flowMode = Both
 	}
 }
@@ -5182,10 +4814,10 @@ PART
 {
 	part = structuralWing_4294384840
 	partName = Part
-	pos = 4.808078,9.811768,-5.843187
+	pos = 4.808079,9.811768,-5.843189
 	attPos = 0,0,0
 	attPos0 = 1.295987,0.8085448,2.298697E-07
-	rot = 4.313038E-07,-0.7071065,-0.7071072,-5.170007E-07
+	rot = 4.313038E-07,-0.7071064,-0.7071072,-5.170007E-07
 	attRot = 0,0,0,1
 	attRot0 = -3.427267E-07,1,8.429373E-08,-2.369704E-08
 	mir = 1,1,1
@@ -5240,10 +4872,10 @@ PART
 {
 	part = elevon3_4294380440
 	partName = Part
-	pos = 5.662574,9.811769,-7.639933
+	pos = 5.662575,9.811769,-7.639937
 	attPos = 0,0,0
 	attPos0 = -0.8544924,-1.796739,-3.685844E-07
-	rot = 3.090819E-08,-0.7071068,-0.7071069,3.090895E-08
+	rot = 3.090823E-08,-0.7071068,-0.7071069,3.090889E-08
 	attRot = 0.4999999,0.4999999,0.4999999,-0.4999999
 	attRot0 = 3.371748E-07,1.043081E-07,6.705523E-07,1
 	mir = 1,1,1
@@ -5272,7 +4904,7 @@ PART
 	{
 		name = ModuleControlSurface
 		isEnabled = True
-		mirrorDeploy = False
+		mirrorDeploy = True
 		usesMirrorDeploy = True
 		ignorePitch = False
 		ignoreYaw = False
@@ -5349,10 +4981,10 @@ PART
 {
 	part = GearMedium_4294295418
 	partName = Part
-	pos = 3.512088,9.203751,-5.843217
+	pos = 3.512089,9.203751,-5.843219
 	attPos = -2.899808E-06,2.801418E-06,-0.1228876
 	attPos0 = -2.868757E-06,0.8085126,0.730905
-	rot = -2.411496E-07,-1,-4.470348E-07,-3.278257E-07
+	rot = -2.411496E-07,-1,-4.636154E-07,-3.278257E-07
 	attRot = 0,-0.9999999,0,0
 	attRot0 = 1.109135E-07,0.7071069,-0.7071068,1.109135E-07
 	mir = 1,1,1
@@ -5433,7 +5065,25 @@ PART
 	{
 		name = ModuleWheelSuspension
 		isEnabled = True
+		springTweakable = 1
+		damperTweakable = 1
+		suspensionPos = (-1, -1, -1)
+		autoBoost = 0
 		stagingEnabled = True
+		springTweakable_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
+		damperTweakable_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0.05
+			maxValue = 2
+			stepIncrement = 0.05
+		}
 		EVENTS
 		{
 			ToggleStaging
@@ -5457,15 +5107,15 @@ PART
 	{
 		name = ModuleWheelBrakes
 		isEnabled = True
-		brakeTweak = 100
+		brakeTweakable = 100
 		brakeInput = 0
 		stagingEnabled = True
-		brakeTweak_UIFlight
+		brakeTweakable_UIFlight
 		{
 			controlEnabled = True
 			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.1
+			maxValue = 200
+			stepIncrement = 5
 		}
 		EVENTS
 		{
@@ -5771,10 +5421,10 @@ PART
 {
 	part = rcsTankMini_4294038206
 	partName = Part
-	pos = 4.465188,9.811769,-7.821553
+	pos = 4.46519,9.811769,-7.821557
 	attPos = -0.5473113,-0.3003622,2.799877E-07
 	attPos0 = 1.500399,-0.8694559,-6.63238E-07
-	rot = -2.41643E-07,0.7071065,0.7071072,2.641193E-07
+	rot = -2.41643E-07,0.7071064,0.7071072,2.641193E-07
 	attRot = 0,0,0,1
 	attRot0 = 2.980235E-08,-1,-1.685874E-07,6.84003E-08
 	mir = 1,1,1
@@ -5820,10 +5470,10 @@ PART
 {
 	part = strutCube_4294033646
 	partName = Part
-	pos = 4.511064,9.812047,-8.125294
+	pos = 4.511066,9.812047,-8.125298
 	attPos = 0.124537,-5.722046E-06,-3.958121E-09
 	attPos0 = -0.1704123,-0.3037344,0.0002771812
-	rot = -0.7071068,3.014578E-14,1.306317E-13,0.7071069
+	rot = -0.7071068,-1.254636E-14,1.452365E-13,0.7071069
 	attRot = 0,0,0,-0.9999999
 	attRot0 = -1.589328E-08,5.900559E-07,-1,3.576278E-07
 	mir = 1,1,1
@@ -5854,10 +5504,10 @@ PART
 {
 	part = omsEngine_4294033614
 	partName = Part
-	pos = 4.442867,9.812051,-8.328103
+	pos = 4.442868,9.812051,-8.328107
 	attPos = -0.1751496,0.1685598,1.666694E-06
 	attPos0 = 0.1069565,0.0342485,2.158016E-06
-	rot = 0.5000002,-0.4999999,-0.5000001,0.5000001
+	rot = 0.5000001,-0.4999999,-0.5000001,0.5000001
 	attRot = 0,0,-0.9999999,0
 	attRot0 = 0.7071069,-1.123711E-07,0.7071068,1.12371E-07
 	mir = 1,1,1
@@ -5961,10 +5611,10 @@ PART
 {
 	part = standardNoseCone_4294033216
 	partName = Part
-	pos = 4.465188,9.811769,-8.259055
+	pos = 4.46519,9.811769,-8.259059
 	attPos = 0,0,0
 	attPos0 = -4.5076E-07,-0.4375024,-4.946987E-07
-	rot = -0.7071068,-1.507289E-14,9.546163E-14,0.7071069
+	rot = -0.7071068,-5.776501E-14,1.100664E-13,0.7071069
 	attRot = 0.9999999,0,0,0
 	attRot0 = -1.589325E-08,5.057622E-07,-1,3.576278E-07
 	mir = 1,1,1
@@ -6018,10 +5668,10 @@ PART
 {
 	part = rcsTankMini_4294002162
 	partName = Part
-	pos = 4.465188,9.811769,-7.446555
+	pos = 4.46519,9.811769,-7.446559
 	attPos = 0,0,0
 	attPos0 = -7.376075E-07,0.374998,4.556329E-07
-	rot = 0.7071069,-1.632895E-14,2.386542E-14,0.7071068
+	rot = 0.7071069,-4.681277E-16,6.781354E-14,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 3.576279E-07,-1,-5.057622E-07,1.589318E-08
 	mir = 1,1,1
@@ -6064,10 +5714,10 @@ PART
 {
 	part = standardNoseCone_4294001824
 	partName = Part
-	pos = 4.465189,9.811769,-7.009057
+	pos = 4.46519,9.811769,-7.00906
 	attPos = 0,0,0
 	attPos0 = 9.052468E-07,0.4374982,-8.903214E-08
-	rot = 0.7071068,3.454206E-14,-4.584668E-14,0.7071069
+	rot = 0.7071068,1.38923E-14,1.493052E-14,0.7071068
 	attRot = 0,0,0,1
 	attRot0 = 0,2.171032E-14,3.098374E-15,1
 	mir = 1,1,1
@@ -6121,10 +5771,10 @@ PART
 {
 	part = smallCtrlSrf_4294379466
 	partName = Part
-	pos = 1.786532,9.811769,-7.530846
+	pos = 1.786532,9.811769,-7.53085
 	attPos = 0,0,0
 	attPos0 = -0.4649902,-0.9374998,-4.962262E-07
-	rot = 3.090846E-08,-0.7071069,-0.7071068,3.090855E-08
+	rot = 3.090843E-08,-0.7071068,-0.7071068,3.090853E-08
 	attRot = -0.4999999,-0.4999999,-0.4999999,0.4999999
 	attRot0 = 1.685874E-07,-2.98023E-08,3.278255E-07,1
 	mir = 1,1,1
@@ -6153,7 +5803,7 @@ PART
 	{
 		name = ModuleControlSurface
 		isEnabled = True
-		mirrorDeploy = False
+		mirrorDeploy = True
 		usesMirrorDeploy = True
 		ignorePitch = False
 		ignoreYaw = False
@@ -6230,10 +5880,10 @@ PART
 {
 	part = strutConnector_4294006506
 	partName = CompoundPart
-	pos = -1.176024,9.963209,-7.499677
+	pos = -1.176024,9.963209,-7.499681
 	attPos = 0,0,0
 	attPos0 = -1.247528,-0.9011416,-0.1514405
-	rot = -0.6130998,0.3522908,0.352291,-0.6130996
+	rot = -0.6130998,0.3522908,0.352291,-0.6130995
 	attRot = 0,0,0,1
 	attRot0 = 8.42937E-08,-0.4982145,-1.264406E-07,0.8670539
 	mir = 1,1,1
@@ -6315,7 +5965,7 @@ PART
 {
 	part = strutConnector_4294006144
 	partName = CompoundPart
-	pos = 1.319032,9.963209,-7.499677
+	pos = 1.319032,9.963209,-7.499681
 	attPos = 0,0,0
 	attPos0 = 1.247528,-0.9011416,-0.1514405
 	rot = -0.352291,0.6130995,0.6130998,-0.3522908
@@ -6400,7 +6050,7 @@ PART
 {
 	part = wingConnector4_4294400830
 	partName = Part
-	pos = -1.180447,9.811769,-4.72029
+	pos = -1.180447,9.811769,-4.720293
 	attPos = 0,0,0
 	attPos0 = -1.251953,-0.9342589,1.113723E-07
 	rot = -0.7071069,-1.264405E-07,1.264405E-07,-0.7071068
@@ -6459,10 +6109,10 @@ PART
 {
 	part = radPanelEdge_4294335116
 	partName = Part
-	pos = -1.194708,9.905517,-4.692614
+	pos = -1.194708,9.905517,-4.692616
 	attPos = 0,0,0
 	attPos0 = -0.01426078,0.02767609,-0.09374812
-	rot = 0.4999999,0.5000002,0.5,0.5000002
+	rot = 0.4999998,0.5000001,0.4999999,0.5000001
 	attRot = 0,0.7071067,0,0.7071067
 	attRot0 = 1.228249E-07,-0.7071069,1.22825E-07,-0.7071067
 	mir = 1,1,1
@@ -6538,7 +6188,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -6555,7 +6205,7 @@ PART
 {
 	part = radPanelEdge_4294333606
 	partName = Part
-	pos = -1.194708,9.718019,-4.692614
+	pos = -1.194708,9.718019,-4.692616
 	attPos = 0,0,0
 	attPos0 = -0.01426138,0.02767588,0.09374883
 	rot = 0.5000004,0.4999999,0.5000001,0.4999999
@@ -6634,7 +6284,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -6651,10 +6301,10 @@ PART
 {
 	part = wingConnector4_4294400734
 	partName = Part
-	pos = 1.323455,9.811769,-4.72029
+	pos = 1.323455,9.811769,-4.720293
 	attPos = 0,0,0
 	attPos0 = 1.251953,-0.9342589,1.113723E-07
-	rot = 1.573491E-07,-0.7071067,-0.7071069,-9.553194E-08
+	rot = 1.573491E-07,-0.7071067,-0.7071069,-9.553195E-08
 	attRot = 0,0,0,1
 	attRot0 = -1.788139E-07,1,1.685874E-07,-4.371137E-08
 	mir = 1,1,1
@@ -6710,10 +6360,10 @@ PART
 {
 	part = radPanelEdge_4294334582
 	partName = Part
-	pos = 1.337716,9.905517,-4.692614
+	pos = 1.337716,9.905517,-4.692616
 	attPos = 0,0,0
 	attPos0 = -0.01426079,0.02767607,0.09374812
-	rot = 0.5000002,-0.5000001,-0.4999997,0.5000002
+	rot = 0.5000001,-0.5000001,-0.4999996,0.5000001
 	attRot = 0,0.7071067,0,0.7071067
 	attRot0 = 1.402828E-07,0.7071067,1.613561E-07,0.7071069
 	mir = 1,1,1
@@ -6789,7 +6439,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -6806,10 +6456,10 @@ PART
 {
 	part = radPanelEdge_4294333690
 	partName = Part
-	pos = 1.337716,9.718019,-4.692614
+	pos = 1.337716,9.718019,-4.692616
 	attPos = 0,0,0
 	attPos0 = -0.01426137,0.02767589,-0.09374883
-	rot = 0.5000004,-0.4999998,-0.4999999,0.5000002
+	rot = 0.5000004,-0.4999998,-0.4999999,0.5000001
 	attRot = 0,-0.7071067,0,-0.7071067
 	attRot0 = -1.125984E-07,0.7071069,-1.336719E-07,0.7071067
 	mir = 1,1,1
@@ -6885,7 +6535,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -6902,7 +6552,7 @@ PART
 {
 	part = wingStrake_4294391100
 	partName = Part
-	pos = -1.178526,9.811769,-2.521612
+	pos = -1.178526,9.811769,-2.521613
 	attPos = 0,0,0
 	attPos0 = -1.250032,1.264411,-1.507295E-07
 	rot = -0.7071069,-1.264405E-07,1.264405E-07,-0.7071068
@@ -6959,10 +6609,10 @@ PART
 {
 	part = wingStrake_4294390916
 	partName = Part
-	pos = 1.321534,9.811769,-2.521612
+	pos = 1.321534,9.811769,-2.521613
 	attPos = 0,0,0
 	attPos0 = 1.250032,1.264411,-1.507295E-07
-	rot = 1.573491E-07,-0.7071067,-0.7071069,-9.553194E-08
+	rot = 1.573491E-07,-0.7071067,-0.7071069,-9.553195E-08
 	attRot = 0,0,0,1
 	attRot0 = -1.788139E-07,1,1.685874E-07,-4.371137E-08
 	mir = 1,1,1
@@ -7095,7 +6745,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -7191,7 +6841,7 @@ PART
 		{
 			ToggleRadiatorAction
 			{
-				actionGroup = None
+				actionGroup = Custom02
 			}
 			ActivateAction
 			{
@@ -7206,497 +6856,9 @@ PART
 }
 PART
 {
-	part = airplaneTail_4294320786
-	partName = Part
-	pos = 0.5553444,9.119423,-4.204987
-	attPos = -0.1837784,-1.105983,-0.1593838
-	attPos0 = 0.6676194,0.6870215,0.8517303
-	rot = -0.7173426,-0.1937961,-0.1745397,-0.646064
-	attRot = -0.3555879,0.7380372,0.5731604,0.01859004
-	attRot0 = 4.214685E-08,0.2608085,2.107342E-08,0.9653906
-	mir = 1,1,1
-	symMethod = Mirror
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = ramAirIntake_4294328328
-	sym = airplaneTail_4294319574
-	srfN = srfAttach,mk2Fuselage_4294473910
-	attN = top,ramAirIntake_4294328328
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = ramAirIntake_4294328328
-	partName = Part
-	pos = 0.5553433,9.119425,-4.204987
-	attPos = 0,0,0
-	attPos0 = 0,4.76837E-07,-9.536744E-07
-	rot = -0.7186993,-0.1886852,-0.1688662,-0.6475751
-	attRot = 0.1886852,-0.7186992,-0.6475753,0.1688662
-	attRot0 = 8.42937E-08,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = ramAirIntake_4294319528
-	attN = bottom01,airplaneTail_4294320786
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	RESOURCE
-	{
-		name = IntakeAir
-		amount = 2
-		maxAmount = 2
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = IntakeAtm
-		amount = 2
-		maxAmount = 2
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = airplaneTail_4294319574
-	partName = Part
-	pos = -0.4123356,9.119425,-4.204987
-	attPos = 0.1837789,-1.105983,-0.1593848
-	attPos0 = -0.6676194,0.6870217,0.8517303
-	rot = -0.7173426,0.1937961,0.1745397,-0.646064
-	attRot = -0.3555879,0.7380372,0.5731604,0.01859004
-	attRot0 = 4.214685E-08,-0.2608084,0,0.9653906
-	mir = 1,1,1
-	symMethod = Mirror
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = ramAirIntake_4294319528
-	sym = airplaneTail_4294320786
-	srfN = srfAttach,mk2Fuselage_4294473910
-	attN = top,ramAirIntake_4294319528
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = ramAirIntake_4294319528
-	partName = Part
-	pos = -0.4123346,9.119427,-4.204987
-	attPos = 0,0,0
-	attPos0 = 0,4.76837E-07,-9.536744E-07
-	rot = -0.7186992,0.1886852,0.1688661,-0.6475753
-	attRot = 0.1886852,-0.7186992,-0.6475753,0.1688662
-	attRot0 = 8.42937E-08,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = ramAirIntake_4294328328
-	attN = bottom01,airplaneTail_4294319574
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateHeat
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleResourceIntake
-		isEnabled = True
-		intakeEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			Deactivate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Close Intake
-				guiName = Close Intake
-				category = Close Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Activate
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Open Intake
-				guiName = Open Intake
-				category = Open Intake
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	RESOURCE
-	{
-		name = IntakeAir
-		amount = 2
-		maxAmount = 2
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = IntakeAtm
-		amount = 2
-		maxAmount = 2
-		flowState = True
-		isTweakable = False
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
 	part = strutConnector_4294007426
 	partName = CompoundPart
-	pos = 1.311002,9.96789,-3.686598
+	pos = 1.311002,9.96789,-3.6866
 	attPos = 0,0,0
 	attPos0 = 1.239498,0.09943318,-0.1561213
 	rot = -0.352291,0.6130996,0.6130996,-0.352291
@@ -7781,7 +6943,7 @@ PART
 {
 	part = strutConnector_4294007326
 	partName = CompoundPart
-	pos = -1.167993,9.96789,-3.686597
+	pos = -1.167993,9.96789,-3.686599
 	attPos = 0,0,0
 	attPos0 = -1.239498,0.09943342,-0.1561213
 	rot = -0.6130998,0.3522908,0.3522908,-0.6130996
@@ -7866,10 +7028,10 @@ PART
 {
 	part = M2X.RCSBlister_4294572174
 	partName = Part
-	pos = 0.07150406,10.5419,-6.664724
+	pos = 0.07150406,10.5419,-6.664727
 	attPos = 0,0,0
 	attPos0 = -6.705523E-08,-0.0661931,-0.7301322
-	rot = -0.5,0.5000001,0.5,-0.5000001
+	rot = -0.4999999,0.5000001,0.4999999,-0.5000001
 	attRot = 0,0,0,1
 	attRot0 = -1.192093E-07,-0.7071068,1.192093E-07,0.7071068
 	mir = 1,1,1
@@ -7900,13 +7062,17 @@ PART
 		isEnabled = True
 		selectedObject = 3
 		stagingEnabled = True
+		selectedObject_UIEditor
+		{
+			controlEnabled = True
+			options = Ullage, Dual, Quad, Omni
+		}
 		EVENTS
 		{
 			nextObjectEvent
 			{
 				active = True
 				guiActive = False
-				guiActiveEditor = True
 				guiActiveUncommand = False
 				guiIcon = Next part variant
 				guiName = Next part variant
@@ -7919,7 +7085,6 @@ PART
 			{
 				active = True
 				guiActive = False
-				guiActiveEditor = True
 				guiActiveUncommand = False
 				guiIcon = Prev part variant
 				guiName = Prev part variant
@@ -8067,10 +7232,10 @@ PART
 {
 	part = M2X.RCSBlister_4294571818
 	partName = Part
-	pos = 0.07150427,9.081636,-6.664724
+	pos = 0.07150427,9.081636,-6.664726
 	attPos = 0,0,0
 	attPos0 = 1.341105E-07,-0.0661931,0.7301322
-	rot = -0.5000002,-0.4999999,-0.5000002,-0.4999998
+	rot = -0.5000002,-0.4999999,-0.5000001,-0.4999998
 	attRot = 0,0,0,1
 	attRot0 = 2.384186E-07,0.7071068,1.788139E-07,0.7071068
 	mir = 1,1,1
@@ -8101,13 +7266,17 @@ PART
 		isEnabled = True
 		selectedObject = 3
 		stagingEnabled = True
+		selectedObject_UIEditor
+		{
+			controlEnabled = True
+			options = Ullage, Dual, Quad, Omni
+		}
 		EVENTS
 		{
 			nextObjectEvent
 			{
 				active = True
 				guiActive = False
-				guiActiveEditor = True
 				guiActiveUncommand = False
 				guiIcon = Next part variant
 				guiName = Next part variant
@@ -8120,7 +7289,6 @@ PART
 			{
 				active = True
 				guiActive = False
-				guiActiveEditor = True
 				guiActiveUncommand = False
 				guiIcon = Prev part variant
 				guiName = Prev part variant
@@ -8262,5 +7430,283 @@ PART
 				actionGroup = None
 			}
 		}
+	}
+}
+PART
+{
+	part = M2X.SCRamjet_4294413520
+	partName = Part
+	pos = 0.07150413,9.811769,-7.536032
+	attPos = 0,0,0
+	attPos0 = 0,-0.9375019,1.117589E-07
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,-1
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 1
+	dstg = 0
+	sidx = 1
+	sqor = 1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = top,mk2FuselageShortLiquid_4294448810
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			Deactivate
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Close Intake
+				guiName = Close Intake
+				category = Close Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Activate
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Open Intake
+				guiName = Open Intake
+				category = Open Intake
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			RunTestEvent
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Run Test
+				guiName = Run Test
+				category = Run Test
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = IntakeAir
+		amount = 3
+		maxAmount = 3
+		flowState = True
+		isTweakable = False
+		hideFlow = False
+		isVisible = False
+		flowMode = Both
 	}
 }

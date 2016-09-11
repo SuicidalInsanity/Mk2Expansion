@@ -1,3 +1,13 @@
+Version 1.7.13
+=========================================================
+-Fixes Mk2 Endcap hatch obstructed issue
+-Model Rework: Hyperblast Scramjet
+-Fixes RPM CB-C, HS-X, and SC-TD Cockpit overlay masks 
+-Banshee lift fans now have MM patch for alternate airbreathing mode
+-Model Retexture; L-Hub
+-FX Rework: Ramjet FX
+-Removed Shrouded Landing Leg
+
 Version 1.7.12
 ===========================================================
 -Model Rework: Engine Shroud now has third variant for long engines/combo engine shroud empennage
