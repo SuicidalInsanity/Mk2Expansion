@@ -1,3 +1,7 @@
+1.7.20.1
+=====================================================
+-Fixes mesh configuration error with Mk2 nosebay
+
 1.7.20
 =======================================================
 -Update for KSP 1.2
@@ -8,6 +12,7 @@
 -Part Rework; Mk2 Service Bay now has Xenon/MP option
 -Part Rework: Afterburn Ramjet
 -Part Rework: RCSAS module, torque values tweaked
+-part Rework: Aligning docking port
 -Reworked Viper IVA
 -Fixed Dropship cockpit IVA overlaymask clipping
 -Cockpits now have internal antenna modules
