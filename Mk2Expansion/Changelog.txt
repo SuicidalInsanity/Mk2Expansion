@@ -1,3 +1,24 @@
+1.7.20
+=======================================================
+-Update for KSP 1.2
+-Part categories updated to use 1.2 categories
+-New Part: Mk2 Nosecone cargobay
+-Part rework: Service Tank
+-Part Rework: 2-state Aerospace intake now 2-state aerospace mount
+-Part Rework; Mk2 Service Bay now has Xenon/MP option
+-Part Rework: Afterburn Ramjet
+-Part Rework: RCSAS module, torque values tweaked
+-Reworked Viper IVA
+-Fixed Dropship cockpit IVA overlaymask clipping
+-Cockpits now have internal antenna modules
+-SC-TD cockpit now has Kerbnet access
+-Mk2 Scilab now has kerbnet access
+-Fixed reactor timewarp bug
+-Fixed Docking Port Editor CtD issue
+-Stationkeeper OMS pod size tweaked
+-Stationkeeper OMS pod new FX
+-RCS units now use new FX
+
 Version 1.7.13
 =========================================================
 -Fixes Mk2 Endcap hatch obstructed issue
