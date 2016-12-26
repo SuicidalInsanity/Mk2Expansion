@@ -1,3 +1,20 @@
+1.7.26
+=====================================================
+-New Part: Shrouded Thermal Control System
+-Part Rework: Hypersonic Nosecone
+-part Rework: Spadetail
+-Hypersonic Cockpit and Hypersonic nosecone max temp increased
+-Fixed engine FX, removes Aero FX/Engine FX interaction
+-Tweaked Afterburn thrust curve
+-'Vector' turbojet mass reduced
+-'Wedge' Linear Aerospike mass reduced
+-'Sledgehammer' Air-Augmented rocket thrust reduced 
+-Various part costs adjusted to be more in line with stock prices
+
+1.7.25.1
+======================================================
+-Fixes RCSAS module RCS transforms
+
 1.7.25
 =======================================================
 -Fixes Service Bay occulsion issue

@@ -1,0 +1,28 @@
+@PART[M2X_FuselageLiftFan]:FOR[Mk2Expansion]
+{
+	@MODULE[ModuleEnginesFX]   
+	{
+		@PROPELLANT[LiquidFuel] 
+		{
+			@name =  ElectricCharge
+			@ratio = 1000
+		}
+		!PROPELLANT[Oxidizer] {}
+	}
+	!MODULE[ModuleAlternator] {}
+	
+}
+
+@PART[M2X_LiftFan]:FOR[Mk2Expansion]
+{
+	@MODULE[ModuleEnginesFX]   
+	{
+		@PROPELLANT[LiquidFuel] 
+		{
+			@name =  ElectricCharge
+			@ratio = 1000
+		}
+		!PROPELLANT[Oxidizer] {}
+	}
+	!MODULE[ModuleAlternator] {}
+}

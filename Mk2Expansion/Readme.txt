@@ -7,6 +7,7 @@ INSTALLATION
 ===================================================================================================================
 Delete the previous version of Mk2 Expansion (if any) and place the GameData/Mk2Expansion, Gamedata/CommunityResourcepack, and GameData/InterstellarFuelSwitch directories into Kerbal Space Program/GameData directory.
 (Optional) Place the 'Ships' file in your Kerbal Space program folder, and overwrite files if asked to do so. This will add a number of example craft to KSP.
+(optional) place one of the Extras/Mk2Expansion/Patches/XXXXXBanshee.cfg patches into GameData/Mk2Expansion/Patches to change the fueltype of the Banshee lift fan from LF/F to either Electric or LF/Air depending on patch chosen
 
 LICENSE
 ===================================================================================================================
