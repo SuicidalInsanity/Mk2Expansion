@@ -5,13 +5,15 @@ This pack provides mew mk2 spaceplane parts in the form of engines, fuselage seg
 
 INSTALLATION
 ===================================================================================================================
-Delete the previous version of Mk2 Expansion (if any) and place the GameData/Mk2Expansion, Gamedata/CommunityResourcepack, andGameData/InterstellarFuelSwitch directories into Kerbal Space Program/GameData directory. If Module Manager is not already intalled, place the ModuleManager.dll into GameData
+Delete the previous version of Mk2 Expansion (if any) and place the GameData/Mk2Expansion, Gamedata/CommunityResourcePack, and GameData/InterstellarFuelSwitch directories into Kerbal Space Program/GameData directory. If Module Manager is not already intalled, place the ModuleManager.dll into GameData
 
 (Optional) Place the 'Ships' file in your Kerbal Space program folder, and overwrite files if asked to do so. This will add a number of example craft to KSP.
 
 (optional) place one of the Extras/Mk2Expansion/Patches/XXXXXBanshee.cfg patches into GameData/Mk2Expansion/Patches to change the fueltype of the Banshee lift fan from LF/O to either Electric or LF/Air depending on patch chosen.
 
 (Optional) Place the Extras/Mk2Expansion/Patches/VTOLGimbals patch into GameData/Mk2Expansion/Patches to add gimbals to the VTOL engines 
+
+(Optional) Place the Extras/Mk2Expansion/Patches/NTJ_decay patch into GameData/Mk2Expansion/Patches to add reactor heat/decay mechanics to the Nuclear Thermal Jet
 
 LICENSE
 ===================================================================================================================
