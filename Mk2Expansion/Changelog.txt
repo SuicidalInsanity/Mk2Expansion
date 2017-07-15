@@ -1,3 +1,15 @@
+1.7.7
+=====================================================
+-Updates fixes/NFE patch
+-Added ConfigurableContainers exception to IFS patch in case of edge case incompatibility
+-New Part: Long crew tank
+-New Part: Hollow astructural adapter short
+-New Part: Hollow Structural Adapter Long
+-Part Rework: banshee fans now easier to tell which side is up
+-added surface attach to the mk2 structural tube
+-reduced Hypersonic Nose fuel capacity
+-fixes mk2 decoupler drag issue
+
 1.7.5
 ======================================================
 -Update for KSP 1.3
