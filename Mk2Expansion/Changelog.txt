@@ -1,3 +1,39 @@
+1.8
+====================================
+-Adds Localization framework
+-Adds RealPlume-Stock compatibility
+-Fixes NFE compatibility patch again
+-Fixes mesh hole in HS-X Cockpit IVA
+-Fixes Hypersonic cockpit hatch window emissive
+-Fixes Shrouded Radiator hatch size
+-Fixes Decoupler node alignment
+-Fixes Spatular HSNC emissive
+-Nerfed Mule Turbofan max thrust slightly
+-Increased j.Edgar mass to 2.5t
+-Fixed Banshee Velcurve
+-Fixed G-120 Turbojet velcurve, now tapers off at high mach
+-Fixed ESTOC velcurve, now tapers off at high mach
+-Model Rework: CB-C cockpit
+-Model Rework: Service Bay
+-Model Rework: Ion Engine
+-Model Rework: Adapter Intake
+-Model Rework: Manta Intake
+-Model Rework: Engine Shroud
+-Model Rework: Aerospace Mount
+-Model Rework: Banshee Fans
+-Texture Rework: Airlock Endcap
+-Texture Rework: Reactor
+-Fixes texture edges on various parts, seams now align properly with stock Mk2 parts
+-Adds Thermal Emissive to Precooler
+-Adds Thermal emissive to Circular Intake
+-Adds Thermal emmissive/Engine FX to J.Edgar
+-Servicebay Xenon/Monoprop tank amounts increased slightly
+-Service Tank Monoprop tankage increased
+-Service bay now has togglable interior attach nodes
+-All crew holding parts now have secondary airlocks at bulkhead doors
+-All cockpits now have flags
+-Fixes Specular maps on all parts
+	
 1.7.7
 =====================================================
 -Updates fixes/NFE patch
@@ -270,7 +306,7 @@ Version 1.6
 -Model Rework; 'Afterburn' Ramjet new model
 -New FX for the Afterburn and Vector
 -FX fix; Pluto now with 100% more smoke trail
--Part respec: 'J. Edgar eKSPngines returned from legacy, are now heavy lift VTOL engines
+-Part respec: 'J. Edgar engines returned from legacy, are now heavy lift VTOL engines
 -Part respec: 'Pegaus', 'Siddeley', 'Jumpjet' engines thrust buffed ~20%, should make fighter VTOls a bit easier to build
 -New part: Short mk2 bicoupler
 -New Part; mk2 Shockcone Intake
@@ -426,9 +462,3 @@ Version 1.0.1
 =============
 -Added new part: J Edgar VTOL engine in stack and inline flavors
 -Tweaked ESTOC max thrust down by 25%
-
-
-
-
-
-
