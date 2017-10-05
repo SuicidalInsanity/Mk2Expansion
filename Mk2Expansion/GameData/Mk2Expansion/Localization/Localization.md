@@ -1,6 +1,6 @@
 --Mk2 Expansion Localization--
 
-If you are want to help translate M2X, it would be a great help.
+If you want to help translate M2X, it would be a great help.
 
 --How to translate--
 
