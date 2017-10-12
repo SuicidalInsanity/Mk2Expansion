@@ -1,3 +1,13 @@
+1.8.04
+=======================================
+KSP 1.3.1 update
+-Extends atmCurves for all airbreathing engines; now correctly have higher thrust in denser atmospheres - Eve/Tellumo/etc.
+-Model Rework: Afterburn
+-Model Rework: Mule
+-Model Rework: Vector
+-Model Rework: Omni RCS/OMS blister
+-Fixes Banshee Fan SFX
+
 1.8.03
 ====================================
 -Fixes Localization for Rontgen and Hyperblast
