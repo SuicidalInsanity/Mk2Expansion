@@ -11,7 +11,7 @@ Localization files are easy to make. Create a copy of the Mk2Expansion/Localizat
 * "ru.cfg" for Russian
 * "zh-cn.cfg" for Simplified Chinese
 
-  
+  Credit to yalov for Russian translation 
 
 
 
