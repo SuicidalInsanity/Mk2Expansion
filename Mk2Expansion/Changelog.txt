@@ -1,6 +1,13 @@
+1.8.06
+=========================================
+-improves throttle response of prop engines
+-Fixes Turboprop IntakeAir use
+-Fixes some localization typos
+-Fixes Siddley VTOL model
+
 1.8.05
 ======================================
--Adds Russian localization
+-Adds Russian localization courtesy of yalov 
 
 1.8.04
 =======================================
