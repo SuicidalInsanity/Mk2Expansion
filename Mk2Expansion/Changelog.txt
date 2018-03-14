@@ -1,3 +1,13 @@
+1.8.1
+===========================================
+KSP 1.4 update
+-Part Refactor: L/T/X Hubs lighter, now hold fuel
+-Jets now have custom sounds
+-Fixes LiftFan SurfaceFX
+-Xenon tank mass rebalances
+-Service tank now properly holds 200 Monopropellant
+-update to Russian localization, credit to yalov
+
 1.8.06
 =========================================
 -improves throttle response of prop engines
