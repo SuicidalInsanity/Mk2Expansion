@@ -1,3 +1,11 @@
+1.8.2
+===========================================
+-KSP 1.4.4 maintenance update
+-Updated part Specular masks/texturemaps for improved TexturesUnlimited compatibility
+-Boosted EngineFX particle density
+-Example craft no longer contain stock legacy parts
+-Fixes Banshee/Whirligig unpiloted craft engine activation bug 
+
 1.8.1
 ===========================================
 KSP 1.4 update
