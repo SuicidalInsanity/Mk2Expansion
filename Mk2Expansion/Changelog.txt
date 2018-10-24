@@ -1,3 +1,10 @@
+1.8.3
+============================================
+KSP 1.5 update
+-conversion to B9 PartSwitch from IFS
+-Adds optional scramjet patch to reduce scramjet performance to stock scale appropriate levels.
+-Part Rework: Mk2 Nosecone now has non-HRSI variant
+
 1.8.2
 ===========================================
 -KSP 1.4.4 maintenance update
