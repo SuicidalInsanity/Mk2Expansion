@@ -1,3 +1,17 @@
+
+1.8.3.4
+============================================
+-Fixes B9PS-MFT Servie Tank interaction
+-Fixes radial attach on various parts
+-Fixes M2X-USILS MM patch
+-tweaks MFT patch, should play nicer with B9 PS now
+-Adds Atmospheric RCS blister
+
+1.8.3.2
+=============================================
+-Fixes B9PS<->MFT fatal errors
+-Fixes mesh errors with some Service Bay variants
+
 1.8.3
 ============================================
 KSP 1.5 update
