@@ -1,4 +1,19 @@
 
+1.8.4
+=============================================
+-KSP 1.7 update
+-New Part: Mk2 battery bank
+-Fixes missing bulkhead profiles
+-Banshee Fans now transition between horiz/vert flight options
+-J Edgar now has standalone variant for radial placement
+-Aerospike performance refactored, slightly more thrust for slightly less ISP
+-Afterburn subsonic performance buffed slightly
+-X and T structural hub now have stack symmetry
+-Fixes Siddeley localization error
+-Fixes Aerospike smokeFX
+-Fixes scaled flag for agency contracts
+-Adds Whitelist for ReStock compatibility
+
 1.8.3.4
 ============================================
 -Fixes B9PS-MFT Servie Tank interaction

@@ -1,12 +1,18 @@
 ship = M2X Hermes
-version = 1.2.2
+version = 1.7.0
 description = The Hermes is a moderately fast, infinite range cargo plane with a 30 ton carrying capability.
 type = SPH
-size = 25.5980072,10.3297768,24.5408115
+size = 25.5980053,10.3297806,24.5408173
+steamPublishedFileId = 0
+persistentId = 2301985257
+rot = 0,0,0,1
+missionFlag = Mk2Expansion/Agencies/IA
+vesselType = Debris
 PART
 {
 	part = mk2Cockpit.Standard_4294523690
 	partName = Part
+	persistentId = 4265720353
 	pos = 0.0501946099,3.85237908,-0.102685399
 	attPos = 0,0,0
 	attPos0 = 0.0501946099,3.85237908,-0.102685399
@@ -28,7 +34,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = adapterMk3-Mk2_4293520702
-	attN = bottom,adapterMk3-Mk2_4293520702
+	attN = bottom,adapterMk3-Mk2_4293520702_0|-1.25|0
 	EVENTS
 	{
 	}
@@ -44,16 +50,23 @@ PART
 		isEnabled = True
 		hibernation = False
 		hibernateOnWarp = False
+		activeControlPointName = _default
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 			HibernateToggle
 			{
 				actionGroup = None
 				active = False
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -77,18 +90,22 @@ PART
 			CycleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			Activate
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			Deactivate
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			Toggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -111,10 +128,12 @@ PART
 			DeployAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ResetAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -134,6 +153,7 @@ PART
 			CollectAllAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -175,6 +195,7 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -211,6 +232,7 @@ PART
 			{
 				actionGroup = None
 				active = False
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -263,7 +285,8 @@ PART
 {
 	part = adapterMk3-Mk2_4293520702
 	partName = Part
-	pos = 0.0501946099,3.22737885,-3.85269189
+	persistentId = 3512605356
+	pos = 0.0501946099,3.22737885,-3.85269284
 	attPos = 0,0,0
 	attPos0 = 0,-3.75,0.624998808
 	rot = 0,-0.707106829,-0.707106829,0
@@ -287,8 +310,8 @@ PART
 	link = GearMedium_4293436718
 	link = airbrake1_4293302006
 	link = airbrake1_4293300368
-	attN = top,mk2Cockpit.Standard_4294523690
-	attN = bottom,mk3CargoBayM_4293487664
+	attN = top,mk2Cockpit.Standard_4294523690_0|2.5|0.625
+	attN = bottom,mk3CargoBayM_4293487664_0|-2.5|0
 	EVENTS
 	{
 	}
@@ -325,7 +348,8 @@ PART
 {
 	part = mk3CargoBayM_4293487664
 	partName = Part
-	pos = 0.0501946099,3.22737718,-8.85269833
+	persistentId = 4162625427
+	pos = 0.0501946099,3.22737718,-8.85270023
 	attPos = 0,0,0
 	attPos0 = 0,-5,-5.96046391E-07
 	rot = -0.707106829,0,0,-0.707106829
@@ -348,8 +372,8 @@ PART
 	link = mk3CargoRamp_4293487064
 	link = airlinerMainWing_4293499520
 	link = airlinerMainWing_4293485078
-	attN = top,adapterMk3-Mk2_4293520702
-	attN = bottom,mk3CargoRamp_4293487064
+	attN = top,adapterMk3-Mk2_4293520702_0|2.5|0
+	attN = bottom,mk3CargoRamp_4293487064_0|-2.5|0
 	EVENTS
 	{
 	}
@@ -378,6 +402,7 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -404,7 +429,8 @@ PART
 {
 	part = mk3CargoRamp_4293487064
 	partName = Part
-	pos = 0.0501946099,3.22737622,-14.352684
+	persistentId = 241817903
+	pos = 0.0501946099,3.22737622,-14.3526878
 	attPos = 0,0,0
 	attPos0 = 0,-5.50000095,6.55651093E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -429,7 +455,7 @@ PART
 	link = airlinerTailFin_4293457832
 	link = airbrake1_4293302902
 	link = airbrake1_4293302278
-	attN = top,mk3CargoBayM_4293487664
+	attN = top,mk3CargoBayM_4293487664_0|3|0
 	EVENTS
 	{
 	}
@@ -458,6 +484,7 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -484,7 +511,8 @@ PART
 {
 	part = airlinerTailFin_4293460014
 	partName = Part
-	pos = 0.0501944497,5.08507538,-19.0603333
+	persistentId = 280424893
+	pos = 0.0501944497,5.08507538,-19.060339
 	attPos = 0,0,0
 	attPos0 = -1.62440202E-07,-4.70765209,-1.85770202
 	rot = -0.499900818,0.500099123,0.499900818,-0.500099421
@@ -536,14 +564,17 @@ PART
 			ActionToggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -571,7 +602,8 @@ PART
 {
 	part = airlinerTailFin_4293457974
 	partName = Part
-	pos = -1.57360899,4.02832031,-16.6151142
+	persistentId = 3186814539
+	pos = -1.57360899,4.02832031,-16.615118
 	attPos = 0,0,0
 	attPos0 = -1.62380397,-2.26242399,-0.800946116
 	rot = 0.707106888,2.10734221E-08,4.21468549E-08,0.707106769
@@ -624,14 +656,17 @@ PART
 			ActionToggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -659,7 +694,8 @@ PART
 {
 	part = airlinerTailFin_4293457832
 	partName = Part
-	pos = 1.673998,4.02832031,-16.6151142
+	persistentId = 2397984986
+	pos = 1.673998,4.02832031,-16.615118
 	attPos = 0,0,0
 	attPos0 = 1.62380397,-2.26242399,-0.800946116
 	rot = 1.12382219E-08,0.70710665,0.707107008,-9.83519666E-09
@@ -712,14 +748,17 @@ PART
 			ActionToggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -747,7 +786,8 @@ PART
 {
 	part = airlinerMainWing_4293499520
 	partName = Part
-	pos = -1.57360399,3.74343324,-9.56361008
+	persistentId = 774810468
+	pos = -1.57360399,3.74343324,-9.56361198
 	attPos = 0,0,0
 	attPos0 = -1.62380004,-0.710912704,-0.51605612
 	rot = 0.707106829,0,-4.21468407E-08,0.707106829
@@ -813,10 +853,11 @@ PART
 {
 	part = structuralPylon_4293477222
 	partName = Part
-	pos = -4.34858608,3.46822619,-7.92936802
+	persistentId = 749954118
+	pos = -4.34858608,3.46822619,-7.92936993
 	attPos = 0,0.421001285,-8.94069672E-08
 	attPos0 = -2.77498198,1.21324301,0.27520749
-	rot = 0.511498392,0.488230944,0.476188898,0.522727787
+	rot = 0.511498392,0.488230914,0.476188868,0.522727787
 	attRot = 0,0,0,1
 	attRot0 = -0.00794033706,0.681947827,-0.00851504691,0.731308281
 	mir = 1,1,1
@@ -828,7 +869,7 @@ PART
 	dstg = 1
 	sidx = 0
 	sqor = 0
-	sepI = 0
+	sepI = -1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -860,6 +901,7 @@ PART
 			DecoupleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -880,14 +922,17 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			EnableAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			DisableAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -914,7 +959,8 @@ PART
 {
 	part = M2X.RadialMountA_4293475498
 	partName = Part
-	pos = -4.44286251,2.29385829,-6.96528578
+	persistentId = 877126118
+	pos = -4.44286251,2.29385781,-6.96528673
 	attPos = 0.175037697,-0.0765414163,-0.0121135795
 	attPos0 = -1.37524796,1.01292706,9.51899324E-07
 	rot = 0.698400438,-0.0243931692,-0.0249679592,0.714855731
@@ -929,7 +975,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = -1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -938,8 +984,8 @@ PART
 	link = M2X.AtomicJet_4293511804
 	sym = M2X.RadialMountA_4293475228
 	srfN = srfAttach,structuralPylon_4293477222
-	attN = top,M2X.UST_4293503566
-	attN = bottom,M2X.AtomicJet_4293511804
+	attN = top,M2X.UST_4293503566_0|0.05675268|0
+	attN = bottom,M2X.AtomicJet_4293511804_0|-0.05675268|0
 	EVENTS
 	{
 	}
@@ -954,10 +1000,11 @@ PART
 {
 	part = M2X.UST_4293503566
 	partName = Part
-	pos = -4.44200134,2.30615401,-6.43606043
+	persistentId = 1838942398
+	pos = -4.44200134,2.30615354,-6.43606234
 	attPos = 0,0,0
 	attPos0 = 8.07129709E-07,0.529375613,1.07502296E-06
-	rot = -0.698421478,0.0237890203,0.0243777093,-0.714875937
+	rot = -0.698421478,0.0237890389,0.0243777316,-0.714875937
 	attRot = -1.60847577E-07,0.0340608396,-7.92561838E-09,-0.999419868
 	attRot0 = -2.49992496E-07,-0.000845134142,4.19764445E-09,-0.999999642
 	mir = 1,1,1
@@ -969,15 +1016,15 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	link = M2X.circularintake_4293529886
 	sym = M2X.UST_4293474824
-	attN = top,M2X.circularintake_4293529886
-	attN = bottom,M2X.RadialMountA_4293475498
+	attN = top,M2X.circularintake_4293529886_0|0.5|0
+	attN = bottom,M2X.RadialMountA_4293475498_0|-0.5|0
 	EVENTS
 	{
 	}
@@ -1004,10 +1051,11 @@ PART
 	}
 	MODULE
 	{
-		name = InterstellarMeshSwitch
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		selectedObject = 0
 		stagingEnabled = True
+		moduleID = fuelSwitch
+		currentSubtype = Structural
 		EVENTS
 		{
 		}
@@ -1020,19 +1068,8 @@ PART
 	}
 	MODULE
 	{
-		name = InterstellarFuelSwitch
+		name = ModuleB9PartInfo
 		isEnabled = True
-		selectedTankSetup = 0
-		inFlightTankSetup = -1
-		configuredAmounts = 
-		configuredFlowStates = 
-		selectedTankSetupTxt = Structural
-		configLoaded = True
-		initialTankSetup = 
-		storedFactorMultiplier = 1
-		storedVolumeMultiplier = 1
-		storedMassMultiplier = 1
-		traceBoiloff = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1049,7 +1086,8 @@ PART
 {
 	part = M2X.circularintake_4293529886
 	partName = Part
-	pos = -4.44083118,2.32288098,-5.71606064
+	persistentId = 2829196301
+	pos = -4.44083118,2.32288098,-5.71606207
 	attPos = 0,0,0
 	attPos0 = 2.35894504E-07,0.720187724,1.324972E-06
 	rot = -0.698421419,0.0237890165,0.024377713,-0.714875996
@@ -1064,13 +1102,13 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	sym = M2X.circularintake_4293474072
-	attN = bottom,M2X.UST_4293503566
+	attN = bottom,M2X.UST_4293503566_0|-0.2475652|0
 	EVENTS
 	{
 	}
@@ -1094,6 +1132,43 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1127,10 +1202,11 @@ PART
 {
 	part = M2X.AtomicJet_4293511804
 	partName = Part
-	pos = -4.44461823,2.26875138,-8.04590702
+	persistentId = 2455793864
+	pos = -4.44461823,2.26875043,-8.04590893
 	attPos = 0,0,0
 	attPos0 = 2.74332706E-07,-1.08090901,1.06851599E-06
-	rot = -0.698333561,0.0262462478,0.0267783683,-0.714789808
+	rot = -0.698333561,0.0262462497,0.0267783664,-0.714789808
 	attRot = -2.10484416E-07,0.0374961309,-8.15550827E-09,-0.999296904
 	attRot0 = -2.99584229E-07,0.00259235478,6.0062737E-09,-0.999996662
 	mir = 1,1,1
@@ -1142,13 +1218,13 @@ PART
 	dstg = 2
 	sidx = 0
 	sqor = 0
-	sepI = 0
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	sym = M2X.AtomicJet_4293474546
-	attN = top,M2X.RadialMountA_4293475498
+	attN = top,M2X.RadialMountA_4293475498_0|1.024156|0
 	EVENTS
 	{
 	}
@@ -1169,6 +1245,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1178,14 +1255,17 @@ PART
 			OnAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1228,26 +1308,32 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			LockAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			FreeAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitchAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYawAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1337,10 +1423,11 @@ PART
 {
 	part = GearLarge_4293442302
 	partName = Part
-	pos = -2.22106504,3.53362393,-9.54589748
+	persistentId = 3324944258
+	pos = -2.22106504,3.53362393,-9.54589939
 	attPos = 3.57627897E-07,-0.221379399,-1.19209304E-07
 	attPos0 = -0.647461295,0.239091903,0.209809497
-	rot = -0.0569266081,5.93456207E-05,0.00104133307,-0.998377919
+	rot = -0.0569266379,5.93456207E-05,0.00104133319,-0.998377919
 	attRot = 0,0,0,1
 	attRot0 = 0.665706575,0.000778295216,0.000694328104,-0.74621278
 	mir = 1,1,1
@@ -1385,6 +1472,7 @@ PART
 			ActAutoFrictionToggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1397,6 +1485,7 @@ PART
 		isEnabled = True
 		springTweakable = 1
 		damperTweakable = 1
+		autoSpringDamper = True
 		suspensionPos = (-1, -1, -1)
 		autoBoost = 0
 		stagingEnabled = True
@@ -1425,6 +1514,7 @@ PART
 			BrakeAction
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1436,6 +1526,7 @@ PART
 		name = ModuleWheelDeployment
 		isEnabled = True
 		shieldedCanDeploy = False
+		stateDisplayString = Deployed
 		stateString = Deployed
 		stagingEnabled = True
 		position = 1
@@ -1447,6 +1538,7 @@ PART
 			ActionToggle
 			{
 				actionGroup = Gear
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1531,14 +1623,17 @@ PART
 			ToggleLightAction
 			{
 				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOnAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOffAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1596,7 +1691,8 @@ PART
 {
 	part = airlinerMainWing_4293485078
 	partName = Part
-	pos = 1.67399395,3.74343324,-9.56361008
+	persistentId = 2048398710
+	pos = 1.67399395,3.74343324,-9.56361198
 	attPos = 0,0,0
 	attPos0 = 1.62380004,-0.710912704,-0.51605612
 	rot = -7.30554603E-08,0.707106829,0.707106829,-3.09086197E-08
@@ -1662,10 +1758,11 @@ PART
 {
 	part = structuralPylon_4293476988
 	partName = Part
-	pos = 4.44897699,3.46822619,-7.92936993
+	persistentId = 406151852
+	pos = 4.44897699,3.46822619,-7.92937183
 	attPos = 0,0.420998901,0
 	attPos0 = -2.77498198,1.21324301,-0.275207788
-	rot = 0.476188838,0.522727787,0.511498511,0.488230824
+	rot = 0.476188809,0.522727787,0.511498511,0.488230795
 	attRot = 0,0,0,1
 	attRot0 = 0.00794036034,-0.681947827,-0.00851488393,0.731308222
 	mir = 1,1,1
@@ -1677,7 +1774,7 @@ PART
 	dstg = 1
 	sidx = 1
 	sqor = 0
-	sepI = 0
+	sepI = -1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -1709,6 +1806,7 @@ PART
 			DecoupleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1729,14 +1827,17 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			EnableAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			DisableAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1763,10 +1864,11 @@ PART
 {
 	part = M2X.RadialMountA_4293475228
 	partName = Part
-	pos = 4.54325199,2.29385781,-6.96529293
+	persistentId = 3498369520
+	pos = 4.54325199,2.29385686,-6.96529436
 	attPos = 0.175038099,-0.0765426233,0.0121125896
 	attPos0 = -1.37524796,1.01292598,-1.23724396E-06
-	rot = 0.698400617,0.024392765,0.0249675848,0.714855671
+	rot = 0.698400557,0.024392806,0.0249676257,0.714855611
 	attRot = 0,0,0,1
 	attRot0 = -1.57354194E-07,-0.707106888,4.37282104E-08,0.707106829
 	mir = 1,1,1
@@ -1778,7 +1880,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = -1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -1787,8 +1889,8 @@ PART
 	link = M2X.AtomicJet_4293474546
 	sym = M2X.RadialMountA_4293475498
 	srfN = srfAttach,structuralPylon_4293476988
-	attN = top,M2X.UST_4293474824
-	attN = bottom,M2X.AtomicJet_4293474546
+	attN = top,M2X.UST_4293474824_0|0.05675268|0
+	attN = bottom,M2X.AtomicJet_4293474546_0|-0.05675268|0
 	EVENTS
 	{
 	}
@@ -1803,10 +1905,11 @@ PART
 {
 	part = M2X.UST_4293474824
 	partName = Part
-	pos = 4.54239082,2.30615306,-6.43606234
+	persistentId = 863756887
+	pos = 4.54239082,2.30615258,-6.43606329
 	attPos = 0,0,0
 	attPos0 = 2.07689297E-07,0.529375374,2.04275395E-07
-	rot = 0.698421657,0.0237890035,0.0243777037,0.714875877
+	rot = 0.698421597,0.0237889383,0.0243776422,0.714875817
 	attRot = -1.60847577E-07,0.0340608396,-7.92561838E-09,-0.999419868
 	attRot0 = 9.10971707E-08,-0.0349054709,1.88139393E-09,0.999390721
 	mir = 1,1,1
@@ -1818,15 +1921,15 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	link = M2X.circularintake_4293474072
 	sym = M2X.UST_4293503566
-	attN = top,M2X.circularintake_4293474072
-	attN = bottom,M2X.RadialMountA_4293475228
+	attN = top,M2X.circularintake_4293474072_0|0.5|0
+	attN = bottom,M2X.RadialMountA_4293475228_0|-0.5|0
 	EVENTS
 	{
 	}
@@ -1853,10 +1956,11 @@ PART
 	}
 	MODULE
 	{
-		name = InterstellarMeshSwitch
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		selectedObject = 0
 		stagingEnabled = True
+		moduleID = fuelSwitch
+		currentSubtype = Structural
 		EVENTS
 		{
 		}
@@ -1869,19 +1973,8 @@ PART
 	}
 	MODULE
 	{
-		name = InterstellarFuelSwitch
+		name = ModuleB9PartInfo
 		isEnabled = True
-		selectedTankSetup = 0
-		inFlightTankSetup = -1
-		configuredAmounts = 
-		configuredFlowStates = 
-		selectedTankSetupTxt = Structural
-		configLoaded = True
-		initialTankSetup = 
-		storedFactorMultiplier = 1
-		storedVolumeMultiplier = 1
-		storedMassMultiplier = 1
-		traceBoiloff = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1898,10 +1991,11 @@ PART
 {
 	part = M2X.circularintake_4293474072
 	partName = Part
-	pos = 4.54122066,2.32288051,-5.71606207
+	persistentId = 2557697797
+	pos = 4.54122066,2.32288051,-5.71606302
 	attPos = 0,0,0
 	attPos0 = 2.51231796E-07,0.720188081,1.40108602E-06
-	rot = 0.698421657,0.0237890016,0.0243777055,0.714875877
+	rot = 0.698421597,0.0237889383,0.0243776422,0.714875817
 	attRot = 0,0,0,1
 	attRot0 = 2.09250999E-07,-6.87572721E-10,-1.50859703E-09,1
 	mir = 1,1,1
@@ -1913,13 +2007,13 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	sym = M2X.circularintake_4293529886
-	attN = bottom,M2X.UST_4293474824
+	attN = bottom,M2X.UST_4293474824_0|-0.2475652|0
 	EVENTS
 	{
 	}
@@ -1943,6 +2037,43 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateHeat
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleResourceIntake
+		isEnabled = True
+		intakeEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1976,10 +2107,11 @@ PART
 {
 	part = M2X.AtomicJet_4293474546
 	partName = Part
-	pos = 4.54500771,2.26875043,-8.04590797
+	persistentId = 4123779879
+	pos = 4.54500771,2.26874948,-8.04590893
 	attPos = 0,0,0
 	attPos0 = -3.88955996E-08,-1.08090901,1.01839998E-06
-	rot = 0.69833374,0.0262462571,0.0267783813,0.714789867
+	rot = 0.698333621,0.0262462366,0.0267783571,0.714789748
 	attRot = -2.10484416E-07,0.0374961309,-8.15550827E-09,-0.999296904
 	attRot0 = 9.10971707E-08,-0.0349054709,1.88139393E-09,0.999390721
 	mir = 1,1,1
@@ -1991,13 +2123,13 @@ PART
 	dstg = 2
 	sidx = 0
 	sqor = 0
-	sepI = 0
+	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
 	sym = M2X.AtomicJet_4293511804
-	attN = top,M2X.RadialMountA_4293475228
+	attN = top,M2X.RadialMountA_4293475228_0|1.024156|0
 	EVENTS
 	{
 	}
@@ -2018,6 +2150,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2027,14 +2160,17 @@ PART
 			OnAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2077,26 +2213,32 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			LockAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			FreeAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitchAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYawAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2186,10 +2328,11 @@ PART
 {
 	part = GearLarge_4293445210
 	partName = Part
-	pos = 2.321455,3.53362393,-9.54589844
+	persistentId = 2227937409
+	pos = 2.321455,3.53362393,-9.54590034
 	attPos = 7.1525568E-07,-0.221381202,1.78813906E-07
 	attPos0 = -0.647461295,0.239091799,-0.209809601
-	rot = -0.0569266081,-5.93456207E-05,-0.00104133307,-0.998377919
+	rot = -0.0569266379,-5.93456207E-05,-0.00104133319,-0.998377919
 	attRot = 0,0,0,1
 	attRot0 = 0.000694299117,0.74621278,0.665706813,-0.000778262911
 	mir = 1,1,1
@@ -2234,6 +2377,7 @@ PART
 			ActAutoFrictionToggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2246,6 +2390,7 @@ PART
 		isEnabled = True
 		springTweakable = 1
 		damperTweakable = 1
+		autoSpringDamper = True
 		suspensionPos = (-1, -1, -1)
 		autoBoost = 0
 		stagingEnabled = True
@@ -2274,6 +2419,7 @@ PART
 			BrakeAction
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2285,6 +2431,7 @@ PART
 		name = ModuleWheelDeployment
 		isEnabled = True
 		shieldedCanDeploy = False
+		stateDisplayString = Deployed
 		stateString = Deployed
 		stagingEnabled = True
 		position = 1
@@ -2296,6 +2443,7 @@ PART
 			ActionToggle
 			{
 				actionGroup = Gear
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2380,14 +2528,17 @@ PART
 			ToggleLightAction
 			{
 				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOnAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOffAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2445,7 +2596,8 @@ PART
 {
 	part = GearMedium_4293436718
 	partName = Part
-	pos = 0.0501945615,2.3245635,-3.61668491
+	persistentId = 325875341
+	pos = 0.0501945615,2.32456303,-3.61668587
 	attPos = -3.02680192E-09,-0.496244788,-0.314652503
 	attPos0 = 5.14555687E-08,0.732251585,-0.588162422
 	rot = 0.240113795,2.56308612E-14,-1.03621809E-13,-0.970744789
@@ -2492,6 +2644,7 @@ PART
 			ActAutoFrictionToggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2504,6 +2657,7 @@ PART
 		isEnabled = True
 		springTweakable = 1
 		damperTweakable = 1
+		autoSpringDamper = True
 		suspensionPos = (-1, -1, -1)
 		autoBoost = 0
 		stagingEnabled = True
@@ -2532,6 +2686,7 @@ PART
 			BrakeAction
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2543,6 +2698,7 @@ PART
 		name = ModuleWheelDeployment
 		isEnabled = True
 		shieldedCanDeploy = False
+		stateDisplayString = Deployed
 		stateString = Deployed
 		stagingEnabled = True
 		position = 1
@@ -2554,6 +2710,7 @@ PART
 			ActionToggle
 			{
 				actionGroup = Gear
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2638,14 +2795,17 @@ PART
 			ToggleLightAction
 			{
 				actionGroup = Light
+				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOnAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			LightOffAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2703,7 +2863,8 @@ PART
 {
 	part = airlinerCtrlSrf_4293429722
 	partName = Part
-	pos = -6.94058895,3.76509404,-11.0764523
+	persistentId = 4229188539
+	pos = -6.94058895,3.76509404,-11.0764542
 	attPos = 0,0,0
 	attPos0 = -5.36698389,-1.51285505,-0.0216604192
 	rot = -0.128493428,0.695334077,0.695334077,0.128493428
@@ -2756,14 +2917,17 @@ PART
 			ActionToggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2775,10 +2939,11 @@ PART
 {
 	part = airlinerCtrlSrf_4293429390
 	partName = Part
-	pos = 7.04098797,3.76509404,-11.0764523
+	persistentId = 1020369403
+	pos = 7.04098797,3.76509404,-11.0764542
 	attPos = 0,0,0
 	attPos0 = -5.36698389,-1.51285601,0.0216600709
-	rot = 0.695334375,0.128493398,-0.128493398,0.695333898
+	rot = 0.695334375,0.128493384,-0.128493384,0.695333898
 	attRot = 0,0,0.707106709,-0.707106709
 	attRot0 = 0.181717098,-0.983350873,2.24092901E-07,-9.33632123E-08
 	mir = 1,1,1
@@ -2828,14 +2993,17 @@ PART
 			ActionToggle
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2847,10 +3015,11 @@ PART
 {
 	part = airbrake1_4293303528
 	partName = Part
-	pos = -2.22164989,4.04061794,-8.77991295
+	persistentId = 2575619891
+	pos = -2.22164989,4.04061794,-8.77991486
 	attPos = 0,0,0
 	attPos0 = -0.648045599,0.783697128,-0.297185004
-	rot = 0.00074719172,-0.716464877,-0.697622538,0.000727583072
+	rot = 0.000747191662,-0.716464877,-0.697622538,0.00072758313
 	attRot = -0.0436193906,0,0,0.999048173
 	attRot0 = 1.38957703E-05,-0.999910772,0.0133234598,0.00104285299
 	mir = 1,1,1
@@ -2901,19 +3070,23 @@ PART
 			ActionToggleBrakes
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionToggle
 			{
 				actionGroup = None
 				active = False
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2940,10 +3113,11 @@ PART
 {
 	part = airbrake1_4293303140
 	partName = Part
-	pos = 2.32203889,4.04061794,-8.77991295
+	persistentId = 1586023979
+	pos = 2.32203889,4.04061794,-8.77991486
 	attPos = 0,0,0
 	attPos0 = -0.648045301,0.783697128,0.297185004
-	rot = -0.00074719172,-0.716464877,-0.697622538,-0.000727583072
+	rot = -0.000747191662,-0.716464877,-0.697622538,-0.00072758313
 	attRot = -0.0436193906,0,0,0.999048173
 	attRot0 = -0.0133234197,0.00104289595,-1.38963896E-05,-0.999910712
 	mir = 1,1,1
@@ -2994,19 +3168,23 @@ PART
 			ActionToggleBrakes
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionToggle
 			{
 				actionGroup = None
 				active = False
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3033,10 +3211,11 @@ PART
 {
 	part = airbrake1_4293302902
 	partName = Part
-	pos = -0.319840699,5.07725525,-17.3729248
+	persistentId = 122267637
+	pos = -0.319840699,5.07725525,-17.3729286
 	attPos = 0,0,0
 	attPos0 = -0.370035291,-3.02023506,-1.84987795
-	rot = 0.0485710651,-0.705577433,-0.705297291,0.0485517681
+	rot = 0.0485710539,-0.705577374,-0.705297232,0.0485517569
 	attRot = 0,0,0,1
 	attRot0 = 1.36424096E-05,-0.99763912,0.000198090202,0.0686762035
 	mir = 1,1,1
@@ -3087,19 +3266,23 @@ PART
 			ActionToggleBrakes
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionToggle
 			{
 				actionGroup = None
 				active = False
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3126,10 +3309,11 @@ PART
 {
 	part = airbrake1_4293302278
 	partName = Part
-	pos = 0.420229912,5.07725525,-17.3729248
+	persistentId = 3183500174
+	pos = 0.420229912,5.07725525,-17.3729286
 	attPos = 0,0,0
 	attPos0 = 0.370035291,-3.02023506,-1.84987795
-	rot = -0.0485710539,-0.705577433,-0.705297291,-0.0485517569
+	rot = -0.0485710464,-0.705577374,-0.705297232,-0.0485517494
 	attRot = 0,0,0,1
 	attRot0 = -1.36450399E-05,-0.99763912,0.000198090202,-0.0686761886
 	mir = 1,1,1
@@ -3180,19 +3364,23 @@ PART
 			ActionToggleBrakes
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionToggle
 			{
 				actionGroup = None
 				active = False
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3219,10 +3407,11 @@ PART
 {
 	part = airbrake1_4293302006
 	partName = Part
-	pos = -1.37250102,3.72566891,-3.03974938
+	persistentId = 2450699079
+	pos = -1.37250102,3.72566891,-3.03974986
 	attPos = 0,0,0
 	attPos0 = 1.42269504,0.81294179,0.498290211
-	rot = -0.477717817,0.477711171,0.521330118,-0.52133745
+	rot = -0.477717876,0.477711231,0.521330118,-0.521337509
 	attRot = 0,0,0,1
 	attRot0 = 0.0308433603,-0.70643878,-0.0308437198,-0.706428826
 	mir = 1,1,1
@@ -3273,19 +3462,23 @@ PART
 			ActionToggleBrakes
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionToggle
 			{
 				actionGroup = None
 				active = False
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -3312,10 +3505,11 @@ PART
 {
 	part = airbrake1_4293300368
 	partName = Part
-	pos = 1.47289002,3.72566891,-3.03975058
+	persistentId = 1165344285
+	pos = 1.47289002,3.72566891,-3.03975105
 	attPos = 0,0,0
 	attPos0 = -1.42269504,0.812941313,0.498290211
-	rot = -0.477717817,-0.477711171,-0.521330118,-0.52133745
+	rot = -0.477717876,-0.477711231,-0.521330118,-0.521337509
 	attRot = 0,0,0,1
 	attRot0 = -0.0308433399,-0.70643878,-0.0308437198,0.706428826
 	mir = 1,1,1
@@ -3366,19 +3560,23 @@ PART
 			ActionToggleBrakes
 			{
 				actionGroup = Brakes
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionToggle
 			{
 				actionGroup = None
 				active = False
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
