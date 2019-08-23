@@ -42,7 +42,8 @@ Squad/Parts/Utility/mk2CrewCabin/mk2CrewCabin.dds
 Squad/Parts/Utility/mk2CrewCabin/mk2CrewCabin_LUM.dds
 Squad/Parts/Science/LargeCrewedLab/Large_Crewed_Lab.dds
 Squad/Parts/Science/LargeCrewedLab/Large_Crewed_Lab_glow.dds
-Squad/Parts/Engine/OMSEngine/engineoms 1.dds
+Squad/Parts/Engine/OMSEngine/Puff_diffuse.dds
+Squad/Parts/Engine/OMSEngine/Puff_emissive.dds
 Squad/Parts/Thermal/FoldingRadiators/radiator.dds
 Squad/Parts/Resources/MiniISRU/ksp_s_processorSmall_diff.dds
 Squad/Parts/Command/mk2DroneCore/mk2Dronecore.dds
@@ -53,7 +54,11 @@ Squad/Parts/Utility/ServiceBay/ServiceBay.dds
 Squad/Parts/Electrical/z-400Battery/model000.dds
 Squad/Parts/Wheel/LandingGear/LandingGear.dds
 Squad/Parts/Electrical/gigantorXlSolarArray/panel.dds
-Squad/Parts/Electrical/z-4kBattery/ksp_l_batteryPack_diff
-Squad/Parts/Electrical/z-4kBattery/ksp_l_batteryPack_normal
+Squad/Parts/Electrical/z-4kBattery/ksp_l_batteryPack_diff.dds
+Squad/Parts/Electrical/z-4kBattery/ksp_l_batteryPack_normal.dds
+Squad/Parts/Engine/liquidEngineLV-T30/model001.dds
+Squad/Parts/Engine/liquidEnginePoodle_v2/poodle.dds
+Squad/Parts/Engine/liquidEnginePoodle_v2/poodle_Glow.dds
+Squad/Parts/Engine/Size3AdvancedEngine/Size3AdvancedEngineDiffuse.dds
 
 
