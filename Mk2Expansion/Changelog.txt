@@ -8,8 +8,11 @@
 -HS-X IVA tweaks
 -Fixes Tweakscale error on Mk2 Endcap
 -Fixes TweakScale warning on Root Chines
+-removes extraneous :FOR MM syntax
 -Aerospike mass, thrust reduced
 -ESTOC Isp reduced to 310
+-Adds B9PS tank type localization
+-Mk1 Chines now properly configed for FAR
 -All mk2 parts now have proper crash tolerance/maxtemp/BreakingForce values
 
 1.8.4.1
