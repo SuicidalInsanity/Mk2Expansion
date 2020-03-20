@@ -1,3 +1,26 @@
+1.8.7
+==========================================
+update for KSP 1.9
+-Banshee Fans now have in-game fueltype toggle
+-Rework of variant part names and descriptions.
+-Part Remodel: Mallet AASRB
+-Mallet AASRB mass reduced slightly
+-"New" Part: Shrouded Landing Leg
+
+1.8.6.6
+============================================
+-Adds drag cubes for RCSAS, Aligned Dockingport, and Radial Mounts. These should generate much less drag now
+-Fixes Sledgehammer AARE compile error
+-cockpit lights now uniform color
+-Fixes R-71 cockpit IVA portraits, kerbals no longer occluded by instrument consoles
+-Windowshine MM Patch now calls for TextureReplacer instead of the less up-to-date Texturereplacerreplaced
+
+1.8.6.5
+=============================================
+Update for KSP 1.8.1
+-Fixes HSNC missing texture faces
+-Fixes Tunapit load error
+-Adds additional localization, courtesy of Sooll3
 1.8.6
 ===============================================
 -New Part: 'Corgi' Vacuum rocket Engine
@@ -14,6 +37,7 @@
 -Adds B9PS tank type localization
 -Mk1 Chines now properly configed for FAR
 -All mk2 parts now have proper crash tolerance/maxtemp/BreakingForce values
+-Adds optional 4 seat lab MM parch
 
 1.8.4.1
 =============================================
