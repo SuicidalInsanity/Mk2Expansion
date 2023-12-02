@@ -1,3 +1,15 @@
+### v2.20.0
+
+* Recompile against KSP 1.12.3
+* Add new `allowSwitchFromInFlight` option to subtypes, if a subtype
+  with this set to `true` is selected it can't be switched off of in
+  flight
+* Add Italian localization
+
+### v2.19.0
+
+* Recompile against KSP 1.12.2
+
 ### v2.18.0
 
 * Recompile against KSP 1.11.2

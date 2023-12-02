@@ -1,3 +1,13 @@
+1.9.1.3
+===============================================
+-KSP 1.12.5 update
+-Adjusts Lift Fan Intake capacity and Air use in thin atmospheres
+-Fixes potential localization issue with variant parts B9PS configs
+-fix a few MODEL config bugs
+-Fixes SystemHeat bug with nuclear parts
+-Reactor EC generation and storage increased to 400 for parity with NFE/SH versions
+-Adds Waterfall FX support, courtesy of Tagir-1
+
 1.9.1.1
 =======================================
 -Fixes Rontgen Engine FX
