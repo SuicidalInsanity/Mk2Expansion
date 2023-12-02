@@ -9,12 +9,12 @@ Delete the previous version of Mk2 Expansion (if any) and place the GameData/Mk2
 
 (Optional) Place the 'Ships' file in your Kerbal Space program folder, and overwrite files if asked to do so. This will add a number of example craft to KSP.
 
-(optional) place one of the Extras/Mk2Expansion/Patches/XXXXXBanshee.cfg patches into GameData/Mk2Expansion/Patches to change the fueltype of the Banshee lift fan from LF/O to either Electric or LF/Air depending on patch chosen.
 
 (Optional) Place the Extras/Mk2Expansion/Patches/VTOLGimbals patch into GameData/Mk2Expansion/Patches to add gimbals to the VTOL engines 
 
 (Optional) Place the Extras/Mk2Expansion/Patches/NTJ_decay patch into GameData/Mk2Expansion/Patches to add reactor heat/decay mechanics to the Nuclear Thermal Jet
 
+(Optional) Place the Extras/Mk2Expansion/Patches/Mk2X_RontgenFuelSwap patch into GameData/Mk2Expansion/Patches to add dual-cycle functionality to the NTJ 
 
 (Optional) Place the Extras/Mk2Expansion/Patches/Scaled_scramjet patch into GameData/Mk2Expansion/Patches to scale scramjet performance down to something more appropriate stock scaled planets.
 LICENSE

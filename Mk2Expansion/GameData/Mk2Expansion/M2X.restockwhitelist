@@ -50,7 +50,6 @@ Squad/Parts/Command/mk2DroneCore/mk2Dronecore.dds
 Squad/Parts/Command/inlineAdvancedStabilizer/model000.dds
 Squad/Parts/Engine/liquidEngineLV-N/model002.dds
 Squad/Parts/Thermal/RadiatorPanels/radPanel.dds
-Squad/Parts/Utility/ServiceBay/ServiceBay.dds
 Squad/Parts/Electrical/z-400Battery/model000.dds
 Squad/Parts/Wheel/LandingGear/LandingGear.dds
 Squad/Parts/Electrical/gigantorXlSolarArray/panel.dds
@@ -60,5 +59,8 @@ Squad/Parts/Engine/liquidEngineLV-T30/model001.dds
 Squad/Parts/Engine/liquidEnginePoodle_v2/poodle.dds
 Squad/Parts/Engine/liquidEnginePoodle_v2/poodle_Glow.dds
 Squad/Parts/Engine/Size3AdvancedEngine/Size3AdvancedEngineDiffuse.dds
+Squad/Parts/Utility/landingLegLT-2/landingLeg.dds
+Squad/Parts/Utility/dockingPort/DockingPorts_Clampotron_Diffuse
+Squad/Parts/Utility/ServiceBay_v2/Assets/ServiceBay_v2
 
 

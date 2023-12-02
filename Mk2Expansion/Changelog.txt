@@ -1,3 +1,52 @@
+1.9.1.1
+=======================================
+-Fixes Rontgen Engine FX
+
+1.9.1
+==========================================
+KSP 1.12.x update
+-Part Rework: fixes Aligned Docking port missing texture
+-Part Rework: fixes shrouded docking port missing texture
+-Fixes missing texture on Whirligig engine
+-Fixes missing texture on Vector engine
+-Fixes missing texture on MATTOCk engine
+-Fixes missing texture on Mongrel engine
+-Fixes missing texture on Service bay
+-Fixes mesh issue on Engine Shroud
+-Fixes spotlights on SC-TD cockpit
+
+1.9
+===========================================
+KSP 1.11 update
+-New Part: Mk2 cargo container
+-Mk2 adapter endcap now has internal model defined
+-fixes chine texture url issue
+-Adds Cargo/Inventory part functionality
+-Adds Systemheat compatibility MM patch
+-Adds optional MM patch to add dual-cycle option to Rontgen NTJ
+
+1.8.9
+============================================
+-KSP 1.10.1 Update
+-New Part: Slanted Mk2-1.25 Adapter
+-Fixes decoupler crossfeed issue
+-Fixes RCS Blister offset issue
+-Banshee Fan doors have better clearance when open
+-Part Rework: All Chines have been conglomerated into three configurable omni parts
+-Old Chine parts moved to Legacy status
+-New Part: Configurable Chine RCS - multivariant RCS similar to the RCS/OMS/ACS blisters
+-RC/PG RCS Chine parts moved to Legacy status
+-Part Rework: RCSAS
+
+1.8.8
+===========================================
+-Update for KSP 1.10
+-VTOL engine thrusts increased
+-Aerospike thrust increased slightly
+-Fixes JEdgar attach node
+-Fixes Nosecap RCS FX
+-Part Rework: Boost-O-Tron
+
 1.8.7
 ==========================================
 update for KSP 1.9
@@ -6,6 +55,10 @@ update for KSP 1.9
 -Part Remodel: Mallet AASRB
 -Mallet AASRB mass reduced slightly
 -"New" Part: Shrouded Landing Leg
+-Fixes CB-C issue
+-Fixes Dual-Cycle engine node positions
+-RealPlume patch should be less broken now (Thanks Rodg88)
+-MATTOCK smoke now correctly oriented
 
 1.8.6.6
 ============================================
